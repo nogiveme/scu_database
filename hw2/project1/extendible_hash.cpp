@@ -107,23 +107,23 @@ bool ExtendibleHash<K, V>::Remove(const K &key) {
 template <typename K, typename V>
 void ExtendibleHash<K, V>::Insert(const K &key, const V &value) {
   // get hash value of key
-  std::cout << "key is: " << key << std::endl;
-  std::cout << "array_size is: " << array_size << std::endl;
-  std::cout << dir[0]->local_dpt << std::endl;
+  //std::cout << "key is: " << key << std::endl;
+  //std::cout << "array_size is: " << array_size << std::endl;
+  //std::cout << dir[0]->local_dpt << std::endl;
   auto key_hash = HashKey(key);
-   get index from hash value
+  // get index from hash value
   size_t index = key_hash & (key_hash & (1 << global_dpt) - 1);
-  std::cout << "index is: " << index << std::endl;
+  //std::cout << "index is: " << index << std::endl;
 
   std::lock_guard<std::mutex> lck(dir[index]->latch);
   std::lock_guard<std::mutex> lck2(latch);
   if(dir[index]->buffer.find(key) != dir[index]->buffer.end()){
-    std::cout << "yes 2" << std::endl;
+    //std::cout << "yes 2" << std::endl;
     dir[index]->buffer[key] = value;
   }
   else {
     dir[index]->buffer.insert(std::make_pair(key, value));
-    std::cout << "buffer size is: " << dir[index]->buffer.size() << std::endl;
+    //std::cout << "buffer size is: " << dir[index]->buffer.size() << std::endl;
   }
   // check the overflow type
   while(true){
@@ -131,15 +131,15 @@ void ExtendibleHash<K, V>::Insert(const K &key, const V &value) {
     else if(dir[index]->local_dpt == global_dpt){
       // under this condition, directory expansion is needed as well as bucket splitting
       // directory expansion
-      std::cout << "----dir expansion" << std::endl;
+      //std::cout << "----dir expansion" << std::endl;
       global_dpt++;
       size_t len = dir.size();
       for(int i = 0; i < len; i++)
         dir.push_back(dir[i]);
-      std::cout << "then dir size is:" << dir.size() << std::endl;
+      //std::cout << "then dir size is:" << dir.size() << std::endl;
     }
-    std::cout << "global depth is: " << global_dpt << std::endl;
-    std::cout << "local depth is: " << dir[index]->local_dpt << std::endl;
+    //std::cout << "global depth is: " << global_dpt << std::endl;
+    //std::cout << "local depth is: " << dir[index]->local_dpt << std::endl;
     dir[index]->local_dpt++; 
     size_t new_idx_re;
     size_t i = 0;
@@ -149,26 +149,26 @@ void ExtendibleHash<K, V>::Insert(const K &key, const V &value) {
       size_t new_idx = key_hash & ((1 << dir[index]->local_dpt) - 1);
       if((dir[new_idx] == dir[index] && index != new_idx) || 
       (i == dir[index]->buffer.size() - 1 && index == new_idx && !is_created)) {
-        std::cout << "create a new bucket" << std::endl;
-        dir[new_idx_re] = std::make_shared<bucket>(dir[index]->local_dpt);
+        //std::cout << "create a new bucket" << std::endl;
         if(new_idx != index)
           new_idx_re = new_idx;
         else 
           new_idx_re = (1 << (global_dpt - 1)) + new_idx;
+        dir[new_idx_re] = std::make_shared<bucket>(dir[index]->local_dpt);
         is_created = true;
       }
       if(new_idx == index) continue;
       dir[new_idx]->buffer.insert(std::make_pair(iter->first, iter->second));
-      std::cout << "new index is: " << new_idx << std::endl;
-      std::cout << "inserted! dir[new_idx]'s buffer size is: " << dir[new_idx]->buffer.size() << std::endl;
+      //std::cout << "new index is: " << new_idx << std::endl;
+      //std::cout << "inserted! dir[new_idx]'s buffer size is: " << dir[new_idx]->buffer.size() << std::endl;
     }
     for(auto iter = dir[new_idx_re]->buffer.begin(); iter != dir[new_idx_re]->buffer.end(); iter++) {
-      std::cout << "enter the iter " << std::endl;
+      //std::cout << "enter the iter " << std::endl;
       dir[index]->buffer.erase(iter->first);
     }
-    std::cout << "end" << std::endl;
+    //std::cout << "end" << std::endl;
     if(dir[index]->buffer.size() <= array_size) {
-      std::cout << "return" << std::endl;
+      //std::cout << "return" << std::endl;
       return;
     }
   }
