@@ -30,6 +30,7 @@ void LRUReplacer<T>::Insert(const T &value) {
     next->pre = pre;
   } else {
     cur = std::make_shared<node>(value);
+    hashmap.insert(std::make_pair(value, cur));
   }
   cur->next = head->next;
   head->next->pre = cur;
@@ -82,5 +83,4 @@ template class LRUReplacer<Page *>;
 template class LRUReplacer<int>;
 
 } // namespace scudb
-
 
