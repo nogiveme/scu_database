@@ -1,6 +1,14 @@
 # scu_database
-homework
+## 作业1(SQL语句):
 
-# Note
-floder hw1 contains the db file and the **floder placeholder** which contains the **sql** file.
-the **floder img** contains the *screenshot* of the result of sql.
+**hw1包含第一次作业的数据库数据，以及第一次作业的sql文件**
+
+*note: img是第一次作业的运行截图*
+
+
+
+## 作业2(可扩展哈希、LRU、缓存管理)
+
+**hw2包含第二次作业的3个文件**
+
+*note：project1为代码文件夹，image为测试成功截图，pdf文件为作业文档*
