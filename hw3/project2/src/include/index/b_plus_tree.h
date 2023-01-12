@@ -20,6 +20,8 @@
 
 namespace scudb {
 
+enum class Operation {SEARCH = 0, INSERT, DELETE};
+
 #define BPLUSTREE_TYPE BPlusTree<KeyType, ValueType, KeyComparator>
 // Main class providing the API for the Interactive B+ Tree.
 INDEX_TEMPLATE_ARGUMENTS
