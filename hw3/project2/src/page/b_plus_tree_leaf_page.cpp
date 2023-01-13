@@ -110,6 +110,8 @@ int B_PLUS_TREE_LEAF_PAGE_TYPE::Insert(const KeyType &key,
 
   // update size
   IncreaseSize(1);
+
+  return GetSize();
 }
 
 /*****************************************************************************

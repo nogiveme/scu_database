@@ -62,10 +62,20 @@ public:
                       Transaction *transaction = nullptr);
   // expose for test purpose
   B_PLUS_TREE_LEAF_PAGE_TYPE *FindLeafPage(const KeyType &key,
-                                           bool leftMost = false);
+                                           bool leftMost = false, 
+                                           Transaction txn = nullptr,
+                                           Operation op = Operation::SEARCH);
 
 private:
-  void StartNewTree(const KeyType &key, const ValueType &value);
+  void LockPage(Page* page, Transaction* txn, Operation op);
+  
+  void UnlockPage(Page* page, Transaction* txn, Operation op);
+  
+  void UnlockParentPage(Page* page, Transaction* txn, Operation op);
+  
+  void UnlockAllPage(Transaction* txn, Operation op);
+  
+  void StartNewTree(const KeyType &key, const ValueType &value, Transaction txn);
 
   bool InsertIntoLeaf(const KeyType &key, const ValueType &value,
                       Transaction *transaction = nullptr);
