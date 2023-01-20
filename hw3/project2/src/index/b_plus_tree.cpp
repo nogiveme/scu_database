@@ -164,7 +164,7 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
       // split
       auto n_leaf_page = Split(leaf_page);
       n_leaf_page->SetParentPageId(leaf_page->GetParentPageId());
-      n_leaf_page->SetNextPageId(leaf_page->GetNextPage());
+      n_leaf_page->SetNextPageId(leaf_page->GetNextPageId());
       leaf_page->SetNextPageId(n_leaf_page->GetPageId());
 
       // insert into parent
@@ -343,7 +343,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   auto idx = parent_page->ValueIndex(node->GetPageId());
   if(idx > 0) {
     // fetch page
-    auto lft_bro_page_id = parent_page->ValueAt(idx - 1);
+    int lft_bro_page_id = parent_page->ValueAt(idx - 1);
     auto lft_bro_raw_page = buffer_pool_manager_->FetchPage(lft_bro_page_id);
     B_PLUS_TREE_LEAF_PAGE_TYPE* lft_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(lft_bro_raw_page->GetData());
 
@@ -365,7 +365,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   // right brother
   if(idx < parent_page->GetMaxSize() - 1) {
     // fetch page
-    auto rht_bro_page_id = parent_page->ValueAt(idx + 1);
+    int rht_bro_page_id = parent_page->ValueAt(idx + 1);
     auto rht_bro_raw_page = buffer_pool_manager_->FetchPage(rht_bro_page_id);
     B_PLUS_TREE_LEAF_PAGE_TYPE* rht_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(rht_bro_raw_page->GetData());
 
