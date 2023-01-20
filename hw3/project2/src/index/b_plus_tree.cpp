@@ -554,7 +554,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
     if(leftMost)
       child_page_id = cur_in_page->ValueAt(0).GetPageId();
     else
-      child_page_id = cur_in_page->Lookup(key, comparator_)->GetPageId();
+      child_page_id = cur_in_page->Lookup(key, comparator_).GetPageId();
     
     // unping page
     if(txn == nullptr){
