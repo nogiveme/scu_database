@@ -63,7 +63,7 @@ public:
   // expose for test purpose
   Page *FindLeafPage(const KeyType &key,
                                            bool leftMost = false, 
-                                           Transaction txn = nullptr,
+                                           Transaction* txn = nullptr,
                                            Operation op = Operation::SEARCH);
 
 private:
@@ -75,7 +75,7 @@ private:
   
   void UnlockAllPage(Transaction* txn, Operation op);
   
-  void StartNewTree(const KeyType &key, const ValueType &value, Transaction txn);
+  void StartNewTree(const KeyType &key, const ValueType &value, Transaction* txn);
 
   bool InsertIntoLeaf(const KeyType &key, const ValueType &value,
                       Transaction *transaction = nullptr);
@@ -110,6 +110,8 @@ private:
   page_id_t root_page_id_;
   BufferPoolManager *buffer_pool_manager_;
   KeyComparator comparator_;
+
+  std::mutex root_mutex_; //mutex for root page id
 };
 
 } // namespace scudb

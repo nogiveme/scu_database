@@ -81,7 +81,7 @@ bool BPLUSTREE_TYPE::Insert(const KeyType &key, const ValueType &value,
  * tree's root page id and insert entry directly into leaf page.
  */
 INDEX_TEMPLATE_ARGUMENTS
-void BPLUSTREE_TYPE::StartNewTree(const KeyType &key, const ValueType &value, Transaction txn) {
+void BPLUSTREE_TYPE::StartNewTree(const KeyType &key, const ValueType &value, Transaction* txn) {
   // detection
   assert(IsEmpty());
 
@@ -118,7 +118,7 @@ INDEX_TEMPLATE_ARGUMENTS
 bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
                                     Transaction *transaction) {
   // get leaf page
-  Page* leaf_raw_page = FindLeafPage(key, false, transaction, Operation::INSERT);
+  auto leaf_raw_page = FindLeafPage(key, false, transaction, Operation::INSERT);
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
   
   // look up and insert
@@ -164,8 +164,8 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
       // split
       auto n_leaf_page = Split(leaf_page);
       n_leaf_page->SetParentPageId(leaf_page->GetParentPageId());
-      n_leaf_page->SetNextPage(leaf_page->GetNextPage());
-      leaf_page->SetNextPage(n_leaf_page->GetPageId());
+      n_leaf_page->SetNextPageId(leaf_page->GetNextPage());
+      leaf_page->SetNextPageId(n_leaf_page->GetPageId());
 
       // insert into parent
       auto mid = n_leaf_page->KeyAt(0);
@@ -279,7 +279,7 @@ void BPLUSTREE_TYPE::Remove(const KeyType &key, Transaction *transaction) {
   if(IsEmpty()) return ;
 
   // remove
-  Page* leaf_raw_page = FindLeafPage(key, false, transaction, Operation::DELETE);
+  auto leaf_raw_page = FindLeafPage(key, false, transaction, Operation::DELETE);
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
   int cur_size = leaf_page->GetSize();
   int size_after_deletion = leaf_page->RemoveAndDeleteRecord(key, comparator_);
@@ -335,12 +335,12 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   }
 
   // get parent page
-  int parent_page_id = leaf_page->GetParentPageId();
+  int parent_page_id = node->GetParentPageId();
   auto parent_raw_page = buffer_pool_manager_->FetchPage(parent_page_id);
   B_PLUS_TREE_INTERNAL_PAGE_TYPE* parent_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(parent_raw_page->GetData());
     
   // left brother
-  auto idx = parent_page->ValueIndex(leaf_page->GetPageId());
+  auto idx = parent_page->ValueIndex(node->GetPageId());
   if(idx > 0) {
     // fetch page
     auto lft_bro_page_id = parent_page->ValueAt(idx - 1);
@@ -483,7 +483,7 @@ INDEX_TEMPLATE_ARGUMENTS
 INDEXITERATOR_TYPE BPLUSTREE_TYPE::Begin() {
   // get left most page
   KeyType key;
-  Page* leaf_raw_page = FindLeafPage(key, true, nullptr, Operation::SEARCH);
+  auto leaf_raw_page = FindLeafPage(key, true, nullptr, Operation::SEARCH);
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
   
   // construct a iterator
@@ -505,7 +505,7 @@ INDEXITERATOR_TYPE BPLUSTREE_TYPE::Begin() {
 INDEX_TEMPLATE_ARGUMENTS
 INDEXITERATOR_TYPE BPLUSTREE_TYPE::Begin(const KeyType &key) {
   // find leaf page
-  Page* leaf_raw_page = FindLeafPage(key, false, nullptr, Operation::SEARCH);
+  auto leaf_raw_page = FindLeafPage(key, false, nullptr, Operation::SEARCH);
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
 
   // construct iterator
@@ -529,7 +529,7 @@ INDEXITERATOR_TYPE BPLUSTREE_TYPE::Begin(const KeyType &key) {
 INDEX_TEMPLATE_ARGUMENTS
 Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
                                                          bool leftMost, 
-                                                         Transaction txn, 
+                                                         Transaction* txn, 
                                                          Operation op) {
   // empty
   if(IsEmpty()) return nullptr;
@@ -569,8 +569,8 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
 
     if(txn != nullptr){
       if(op==Operation::SEARCH || 
-      (op==Operation::INSERT && node->GetSize() < node->GetMaxSize())|| 
-      (op==Operation::DELETE && node->GetSize() > node->GetMinSize())){
+      (op==Operation::INSERT && cur_page->GetSize() < cur_page->GetMaxSize())|| 
+      (op==Operation::DELETE && cur_page->GetSize() > cur_page->GetMinSize())){
         // Search, or current page is safe
         UnlockParentPage(child_raw_page, txn, op);
       }
