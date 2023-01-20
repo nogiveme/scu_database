@@ -61,7 +61,7 @@ public:
   void RemoveFromFile(const std::string &file_name,
                       Transaction *transaction = nullptr);
   // expose for test purpose
-  B_PLUS_TREE_LEAF_PAGE_TYPE *FindLeafPage(const KeyType &key,
+  Page *FindLeafPage(const KeyType &key,
                                            bool leftMost = false, 
                                            Transaction txn = nullptr,
                                            Operation op = Operation::SEARCH);
@@ -100,6 +100,10 @@ private:
   bool AdjustRoot(BPlusTreePage *node);
 
   void UpdateRootPageId(int insert_record = false);
+
+  inline void LockRoot(){root_mutex_.lock();}
+
+  inline void UnlockRoot(){root_mutex_.unlock();}
 
   // member variable
   std::string index_name_;
