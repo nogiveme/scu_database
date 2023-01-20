@@ -343,7 +343,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   auto idx = parent_page->ValueIndex(node->GetPageId());
   if(idx > 0) {
     // fetch page
-    auto lft_bro_page_id = parent_page->ValueAt(idx - 1)->GetPageId();
+    auto lft_bro_page_id = parent_page->ValueAt(idx - 1).GetPageId();
     auto lft_bro_raw_page = buffer_pool_manager_->FetchPage(lft_bro_page_id);
     B_PLUS_TREE_LEAF_PAGE_TYPE* lft_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(lft_bro_raw_page->GetData());
 
@@ -365,7 +365,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   // right brother
   if(idx < parent_page->GetMaxSize() - 1) {
     // fetch page
-    auto rht_bro_page_id = parent_page->ValueAt(idx + 1)->GetPageId();
+    auto rht_bro_page_id = parent_page->ValueAt(idx + 1).GetPageId();
     auto rht_bro_raw_page = buffer_pool_manager_->FetchPage(rht_bro_page_id);
     B_PLUS_TREE_LEAF_PAGE_TYPE* rht_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(rht_bro_raw_page->GetData());
 
@@ -456,7 +456,7 @@ bool BPLUSTREE_TYPE::AdjustRoot(BPlusTreePage *old_root_node) {
   if(old_root_node->GetSize() == 1) {
     // change root
     B_PLUS_TREE_INTERNAL_PAGE_TYPE* old_root = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(old_root_node);
-    root_page_id_ = old_root->ValueAt(0)->GetPageId();
+    root_page_id_ = old_root->ValueAt(0).GetPageId();
     UpdateRootPageId(true);
 
     // config new root
@@ -552,7 +552,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
     B_PLUS_TREE_INTERNAL_PAGE_TYPE* cur_in_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(cur_page);
     page_id_t child_page_id;
     if(leftMost)
-      child_page_id = cur_in_page->ValueAt(0)->GetPageId();
+      child_page_id = cur_in_page->ValueAt(0).GetPageId();
     else
       child_page_id = cur_in_page->Lookup(key, comparator_)->GetPageId();
     
