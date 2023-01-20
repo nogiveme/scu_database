@@ -345,7 +345,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
     // fetch page
     auto lft_bro_page_id = parent_page->ValueAt(idx - 1).GetPageId();
     auto lft_bro_raw_page = buffer_pool_manager_->FetchPage(lft_bro_page_id);
-    B_PLUS_TREE_LEAF_PAGE_TYPE* lft_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(lft_bro_raw_page->GetData());
+    N* lft_bro_page = reinterpret_cast<N*>(lft_bro_raw_page->GetData());
 
     if(lft_bro_page->GetSize() > lft_bro_page->GetMinSize()){
       // redistribute
@@ -367,7 +367,7 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
     // fetch page
     auto rht_bro_page_id = parent_page->ValueAt(idx + 1).GetPageId();
     auto rht_bro_raw_page = buffer_pool_manager_->FetchPage(rht_bro_page_id);
-    B_PLUS_TREE_LEAF_PAGE_TYPE* rht_bro_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(rht_bro_raw_page->GetData());
+    N* rht_bro_page = reinterpret_cast<N*>(rht_bro_raw_page->GetData());
 
     if(rht_bro_page->GetSize() > rht_bro_page->GetMinSize()){
       // redistribute
