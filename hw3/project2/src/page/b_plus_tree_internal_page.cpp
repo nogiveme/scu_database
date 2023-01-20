@@ -93,7 +93,7 @@ B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key,
     } else if(res > 0) {
       lft = mid + 1;
     } else {
-      return array[mid].first;
+      return array[mid].second;
     }
   }
   return NULL;
