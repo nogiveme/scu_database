@@ -228,7 +228,8 @@ void BPLUSTREE_TYPE::InsertIntoParent(BPlusTreePage *old_node,
       throw Exception(ExceptionType::EXCEPTION_TYPE_INDEX, "InsertIntoParent: out of memory");
     
     // config new root
-    B_PLUS_TREE_INTERNAL_PAGE_TYPE* root_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(root_raw_page->GetData());
+    auto root_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                        KeyComparator>*>(root_raw_page->GetData());
     root_page->Init(root_page_id_, INVALID_PAGE_ID);
     root_page->PopulateNewRoot(old_node->GetPageId(), key, new_node->GetPageId());
 
@@ -243,7 +244,8 @@ void BPLUSTREE_TYPE::InsertIntoParent(BPlusTreePage *old_node,
     // get parent page
     parent_page_id = old_node->GetParentPageId();
     auto parent_raw_page = buffer_pool_manager_->FetchPage(parent_page_id);
-    B_PLUS_TREE_INTERNAL_PAGE_TYPE* parent_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(parent_raw_page->GetData());
+    auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                          KeyComparator>*>(parent_raw_page->GetData());
 
     // insert into parent
     int cur_size = parent_page->InsertNodeAfter(old_node->GetPageId(), key, new_node->GetPageId());
@@ -337,7 +339,8 @@ bool BPLUSTREE_TYPE::CoalesceOrRedistribute(N *node, Transaction *transaction) {
   // get parent page
   int parent_page_id = node->GetParentPageId();
   auto parent_raw_page = buffer_pool_manager_->FetchPage(parent_page_id);
-  BPlusTreeInternalPage<KeyType, page_id_t, KeyComparator>* parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t, KeyComparator>*>(parent_raw_page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t, 
+                                        KeyComparator>*>(parent_raw_page->GetData());
     
   // left brother
   auto idx = parent_page->ValueIndex(node->GetPageId());
@@ -432,7 +435,8 @@ void BPLUSTREE_TYPE::Redistribute(N *neighbor_node, N *node, int index) {
   auto parent_page_id = neighbor_node->GetParentPageId();
   auto page = buffer_pool_manager_->FetchPage(parent_page_id);
   assert(page == nullptr);
-  B_PLUS_TREE_INTERNAL_PAGE_TYPE* parent_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t, 
+                                        KeyComparator>*>(page->GetData());
   auto index_in_parent = parent_page->ValueIndex(neighbor_node->GetPageId());
   buffer_pool_manager_->UnpinPage(parent_page_id, false);
 
@@ -463,13 +467,15 @@ bool BPLUSTREE_TYPE::AdjustRoot(BPlusTreePage *old_root_node) {
   // case 1
   if(old_root_node->GetSize() == 1) {
     // change root
-    B_PLUS_TREE_INTERNAL_PAGE_TYPE* old_root = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(old_root_node);
+    auto old_root = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t, 
+                                      KeyComparator>*>(old_root_node);
     root_page_id_ = old_root->ValueAt(0);
     UpdateRootPageId(true);
 
     // config new root
     auto root_raw_page = buffer_pool_manager_->FetchPage(root_page_id_);
-    B_PLUS_TREE_INTERNAL_PAGE_TYPE* root_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(root_raw_page->GetData());
+    auto root_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                      KeyComparator>*>(root_raw_page->GetData());
     root_page->SetParentPageId(INVALID_PAGE_ID);
     buffer_pool_manager_->UnpinPage(root_page_id_, true);
 
@@ -557,7 +563,8 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
   BPlusTreePage* cur_page = root_page;
   while(!cur_page->IsLeafPage()){
     // get child page id
-    B_PLUS_TREE_INTERNAL_PAGE_TYPE* cur_in_page = reinterpret_cast<B_PLUS_TREE_INTERNAL_PAGE_TYPE*>(cur_page);
+    auto cur_in_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                        KeyComparator>*>(cur_page);
     page_id_t child_page_id;
     if(leftMost)
       child_page_id = cur_in_page->ValueAt(0);

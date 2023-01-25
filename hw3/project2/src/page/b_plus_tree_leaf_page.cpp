@@ -245,7 +245,7 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::MoveFirstToEndOf(
   auto parent_page_id = GetParentPageId();
   auto page = buffer_pool_manager->FetchPage(parent_page_id);
   assert(page == nullptr);
-  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, decltype(GetPageId()),
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
                                                     KeyComparator>*>(page->GetData());
   auto index_in_parent = parent_page->ValueIndex(GetPageId());
   parent_page->SetKeyAt(index_in_parent, array[1].first);
@@ -306,7 +306,8 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::CopyFirstFrom(
   // change parent page info
   auto parent_page_id = GetParentPageId();
   auto page = buffer_pool_manager->FetchPage(parent_page_id);
-  BPlusTreeInternalPage* parent_page = reinterpret_cast<BPlusTreeInternalPage*>(page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                        KeyComparator> *>(page->GetData());
   parent_page->SetKeyAt(parentIndex, item.first);
   buffer_pool_manager->UnpinPage(parent_page_id, true);
 

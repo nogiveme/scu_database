@@ -50,10 +50,6 @@ public:
       return false;
   }
 
-  operator page_id_t() {
-    return page_id_;
-  }
-
 private:
   page_id_t page_id_;
   int slot_num_; // logical offset from 0, 1...
