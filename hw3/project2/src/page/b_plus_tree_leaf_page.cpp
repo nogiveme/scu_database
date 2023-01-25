@@ -55,7 +55,7 @@ int B_PLUS_TREE_LEAF_PAGE_TYPE::KeyIndex(
   // binary search
   int lft = 0, rht = size;
   while(lft < rht) {
-    mid = (lft + rht) / 2;
+    auto mid = (lft + rht) / 2;
     if(comparator(key, array[mid].first) <= 0) rht = mid;
     else lft = mid + 1;
   }
@@ -165,12 +165,9 @@ bool B_PLUS_TREE_LEAF_PAGE_TYPE::Lookup(const KeyType &key, ValueType &value,
   auto idx = KeyIndex(key,comparator);
   if(comparator(key, array[idx]) == 0) {
     value = array[idx].second;
-    break;
   } else {
-    n_idx = idx - 1;
-    if(n_idx >= 0 && comparator(key, array[n_idx]) == 0) 
-      break;
-    else 
+    auto n_idx = idx - 1;
+    if(!(nidx >= 0 && comparator(key, array[n_idx]) == 0))  
       return false;
   }
   return true;
@@ -248,7 +245,8 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::MoveFirstToEndOf(
   auto parent_page_id = GetParentPageId();
   auto page = buffer_pool_manager->FetchPage(parent_page_id);
   assert(page == nullptr);
-  BPlusTreeInternalPage* parent_page = reinterpret_cast<BPlusTreeInternalPage*>(page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, decltype(GetPageId()),
+                                                    KeyComparator>*>(page->GetData());
   auto index_in_parent = parent_page->ValueIndex(GetPageId());
   parent_page->SetKeyAt(index_in_parent, array[1].first);
   buffer_pool_manager->UnpinPage(parent_page_id, true);

@@ -28,14 +28,14 @@ INDEXITERATOR_TYPE::~IndexIterator() {
 INDEX_TEMPLATE_ARGUMENTS
 bool INDEXITERATOR_TYPE::isEnd(){
     // check
-    return (leaf_page_->GetNextPageId() == INVALID_PAGE_ID && index_ >= leaf_page->GetSize());
+    return (leaf_page_->GetNextPageId() == INVALID_PAGE_ID && index_ >= leaf_page_->GetSize());
 }
 
 INDEX_TEMPLATE_ARGUMENTS
 const MappingType& INDEXITERATOR_TYPE::operator*() {
     // detection
     if(isEnd())
-        throw Expression(ExceptionType::EXCEPTION_TYPE_INDEX, "operation *: out of range");
+        throw Exception(ExceptionType::EXCEPTION_TYPE_INDEX, "operation *: out of range");
 
     const MappingType pair = leaf_page_->GetItem(index_);
     return pair;

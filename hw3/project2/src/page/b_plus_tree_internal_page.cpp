@@ -34,7 +34,7 @@ void B_PLUS_TREE_INTERNAL_PAGE_TYPE::Init(page_id_t page_id,
 INDEX_TEMPLATE_ARGUMENTS
 KeyType B_PLUS_TREE_INTERNAL_PAGE_TYPE::KeyAt(int index) const {
   // replace with your own code
-  assert(index > 0 && index < GetMaxSize())
+  assert(index > 0 && index < GetMaxSize());
   KeyType key;
   key = array[index].first;
   return key;
@@ -42,7 +42,7 @@ KeyType B_PLUS_TREE_INTERNAL_PAGE_TYPE::KeyAt(int index) const {
 
 INDEX_TEMPLATE_ARGUMENTS
 void B_PLUS_TREE_INTERNAL_PAGE_TYPE::SetKeyAt(int index, const KeyType &key) {
-  assert(index > 0 && index < GetMaxSize())
+  assert(index > 0 && index < GetMaxSize());
   array[index].first = key;
 }
 
@@ -66,7 +66,7 @@ int B_PLUS_TREE_INTERNAL_PAGE_TYPE::ValueIndex(const ValueType &value) const {
  */
 INDEX_TEMPLATE_ARGUMENTS
 ValueType B_PLUS_TREE_INTERNAL_PAGE_TYPE::ValueAt(int index) const {
-  assert(index >= 0 && index < GetMaxSize())
+  assert(index >= 0 && index < GetMaxSize());
   return array[index].second;
 }
 
@@ -87,7 +87,7 @@ B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key,
   // binary search
   while(lft < rht) {
     int mid = (lft + rht) / 2;
-    res = comparator(key, array[mid].first);
+    auto res = comparator(key, array[mid].first);
     if(res < 0) {
       rht = mid - 1;
     } else if(res > 0) {
@@ -96,7 +96,7 @@ B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key,
       return array[mid].second;
     }
   }
-  return NULL;
+  return -1;
 }
 
 /*****************************************************************************
@@ -156,7 +156,7 @@ void B_PLUS_TREE_INTERNAL_PAGE_TYPE::MoveHalfTo(
   for(int i = hf_index; i < end; i++) {
     auto child_raw_page = buffer_pool_manager->FetchPage(array[i].second);
     auto child_page = reinterpret_cast<BPlusTreePage*>(child_raw_page->GetData());
-    child_page->SetParentPageId(rec_page_id);
+    child_page->SetParentPageId(recipient->GetPageId());
     buffer_pool_manager->UnpinPage(array[i].second, true);
   }
 
@@ -290,10 +290,10 @@ void B_PLUS_TREE_INTERNAL_PAGE_TYPE::CopyLastFrom(
   array[size] = pair;
 
   // change child page info
-  auto child_raw_page = buffer_pool_manager->FetchPage(pair->second);
+  auto child_raw_page = buffer_pool_manager->FetchPage(pair.second);
   BPlusTreeInternalPage* child_page = reinterpret_cast<BPlusTreeInternalPage*>(child_raw_page->GetData());
   child_page->SetParentPageId(GetPageId());
-  buffer_pool_manager->UnpinPage(pair->second);
+  buffer_pool_manager->UnpinPage(pair.second, true);
 
   // update size
   IncreaseSize(1);
@@ -324,15 +324,15 @@ void B_PLUS_TREE_INTERNAL_PAGE_TYPE::CopyFirstFrom(
   array[0] = pair;
 
   // change the child info
-  auto child_raw_page = buffer_pool_manager->FetchPage(pair->second);
+  auto child_raw_page = buffer_pool_manager->FetchPage(pair.second);
   BPlusTreeInternalPage* child_page = reinterpret_cast<BPlusTreeInternalPage*>(child_raw_page->GetData());
   child_page->SetParentPageId(GetPageId());
-  buffer_pool_manager->UnpinPage(pair->second, true);
+  buffer_pool_manager->UnpinPage(pair.second, true);
 
   // change the parent info
   auto parent_raw_page = buffer_pool_manager->FetchPage(GetParentPageId());
   BPlusTreeInternalPage* parent_page = reinterpret_cast<BPlusTreeInternalPage*>(parent_raw_page->GetData());
-  parent_page->SetKeyAt(parent_index, pair->first);
+  parent_page->SetKeyAt(parent_index, pair.first);
   buffer_pool_manager->UnpinPage(GetParentPageId(), true);
 
   // update size
