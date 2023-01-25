@@ -40,7 +40,9 @@ TEST(BPlusTreeTests, InsertTest1) {
     int64_t value = key & 0xFFFFFFFF;
     rid.Set((int32_t)(key >> 32), value);
     index_key.SetFromInteger(key);
+    // std::cout << "insert key: " << key << std::endl;
     tree.Insert(index_key, rid, transaction);
+    // std::cout << "finish inserting key: " << key << std::endl;
   }
 
   std::vector<RID> rids;
@@ -73,6 +75,7 @@ TEST(BPlusTreeTests, InsertTest1) {
   delete bpm;
   remove("test.db");
   remove("test.log");
+  std::cout << "---------------------finish test1" << std::endl;
 }
 
 TEST(BPlusTreeTests, InsertTest2) {

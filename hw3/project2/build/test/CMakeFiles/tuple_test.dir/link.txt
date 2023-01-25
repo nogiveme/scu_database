@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++1y -D__VTableFILE__='"$(subst /home/blacktree/scu_database/hw3/project2/,,$(abspath $<))"' -Wno-unused-parameter  -rdynamic CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o -o tuple_test  -Wl,-rpath,/home/blacktree/scu_database/hw3/project2/build/lib ../lib/libvtable.so ../lib/libsqlite3.so ../lib/libgtest.so -lpthread -ldl -lpthread 

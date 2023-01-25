@@ -69,6 +69,7 @@ INDEX_TEMPLATE_ARGUMENTS
 bool BPLUSTREE_TYPE::Insert(const KeyType &key, const ValueType &value,
                             Transaction *transaction) {
   if(IsEmpty()) {
+    std::cout << "start a new tree" << std::endl;
     StartNewTree(key, value, transaction);
     return true;
   }
@@ -119,12 +120,14 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
                                     Transaction *transaction) {
   // get leaf page
   auto leaf_raw_page = FindLeafPage(key, false, transaction, Operation::INSERT);
+  std::cout << "found leaf page" << std::endl;
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
   
   // look up and insert
   ValueType vt;
   if(leaf_page->Lookup(key, vt, comparator_)){
     // duplicate
+    std::cout << "b plus tree: duplicate pair" << std::endl;
     UnlockParentPage(leaf_raw_page, transaction, Operation::INSERT);
     UnlockPage(leaf_raw_page, transaction, Operation::INSERT);
     return false;
@@ -157,10 +160,14 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
     // }
 
     // insert 
+    std::cout << "page " << leaf_page->GetPageId() << ": start insert" << std::endl; 
     int cur_size = leaf_page->Insert(key, value, comparator_);
+    std::cout << "page " << leaf_page->GetPageId() << ": finish insert" << std::endl;
 
     // check full
     if(cur_size >= leaf_page->GetMaxSize()) {
+      std::cout << "page " << leaf_page->GetPageId() << ": start split" << std::endl;
+
       // split
       auto n_leaf_page = Split(leaf_page);
       n_leaf_page->SetParentPageId(leaf_page->GetParentPageId());
@@ -173,8 +180,9 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
 
       // unlock
       UnlockParentPage(leaf_raw_page, transaction, Operation::INSERT);
-      UnlockPage(leaf_raw_page, transaction, Operation::INSERT);
+      std::cout << "page " << leaf_page->GetPageId() << ": finish spliting" << std::endl;
     }
+    UnlockPage(leaf_raw_page, transaction, Operation::INSERT);
   }
   return true;
 }
@@ -545,6 +553,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
                                                          bool leftMost, 
                                                          Transaction* txn, 
                                                          Operation op) {
+  // std::cout << "start find leaf page" << std::endl;
   // empty
   if(IsEmpty()) return nullptr;
 
@@ -552,6 +561,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
   if(op != Operation::SEARCH)
     // if operation is write, all write latch lock
     LockRoot();
+  // std::cout << "start find leaf page" << std::endl;
 
   // root
   auto root_raw_page = buffer_pool_manager_->FetchPage(root_page_id_);
@@ -562,6 +572,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
   auto child_raw_page = root_raw_page;
   BPlusTreePage* cur_page = root_page;
   while(!cur_page->IsLeafPage()){
+    std::cout << "not leaf" << std::endl;
     // get child page id
     auto cur_in_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
                                         KeyComparator>*>(cur_page);
@@ -569,7 +580,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
     if(leftMost)
       child_page_id = cur_in_page->ValueAt(0);
     else
-      child_page_id = cur_in_page->Lookup(key, comparator_).GetPageId();
+      child_page_id = cur_in_page->Lookup(key, comparator_);
     
     // unping page
     if(txn == nullptr){
@@ -705,7 +716,46 @@ void BPLUSTREE_TYPE::UpdateRootPageId(int insert_record) {
  * print out whole b+tree sturcture, rank by rank
  */
 INDEX_TEMPLATE_ARGUMENTS
-std::string BPLUSTREE_TYPE::ToString(bool verbose) { return "Empty tree"; }
+std::string BPLUSTREE_TYPE::ToString(bool verbose) {
+  if (IsEmpty()) {
+    return "Empty tree";
+  }
+  std::queue<BPlusTreePage *> todo, tmp;
+  std::stringstream tree;
+  auto node = reinterpret_cast<BPlusTreePage *>(
+      buffer_pool_manager_->FetchPage(root_page_id_));
+  if (node == nullptr) {
+    throw Exception(EXCEPTION_TYPE_INDEX,
+                    "all page are pinned while printing");
+  }
+  todo.push(node);
+  bool first = true;
+  while (!todo.empty()) {
+    node = todo.front();
+    if (first) {
+      first = false;
+      tree << "| ";
+    }
+    // leaf page, print all key-value pairs
+    if (node->IsLeafPage()) {
+      auto page = reinterpret_cast<BPlusTreeLeafPage<KeyType, ValueType, KeyComparator> *>(node);
+      tree << page->ToString(verbose) << "| ";
+    } else {
+      auto page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t, KeyComparator> *>(node);
+      tree << page->ToString(verbose) << "| ";
+      page->QueueUpChildren(&tmp, buffer_pool_manager_);
+    }
+    todo.pop();
+    if (todo.empty() && !tmp.empty()) {
+      todo.swap(tmp);
+      tree << '\n';
+      first = true;
+    }
+    // unpin node when we are done
+    buffer_pool_manager_->UnpinPage(node->GetPageId(), false);
+  }
+  return tree.str();
+}
 
 /*
  * This method is used for test only
