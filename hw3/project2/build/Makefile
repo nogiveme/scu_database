@@ -57,10 +57,17 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/blacktree/scu_database_bk/hw3/project2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blacktree/scu_database_bk/hw3/project2/build
+=======
+CMAKE_SOURCE_DIR = /home/blacktree/scu_database/hw3/project2
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/blacktree/scu_database/hw3/project2/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +104,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles /home/blacktree/scu_database_bk/hw3/project2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles /home/blacktree/scu_database/hw3/project2/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles 0
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : all
 
 # The main clean target

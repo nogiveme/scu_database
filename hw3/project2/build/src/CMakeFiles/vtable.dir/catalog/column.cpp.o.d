@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/catalog/column.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/catalog/column.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/catalog/column.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/sstream \
  /usr/include/c++/9/istream /usr/include/c++/9/ios \
  /usr/include/c++/9/iosfwd \
@@ -137,8 +141,13 @@ src/CMakeFiles/vtable.dir/catalog/column.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/sstream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/column.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/exception.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/column.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/iostream /usr/include/c++/9/memory \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
@@ -158,5 +167,10 @@ src/CMakeFiles/vtable.dir/catalog/column.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

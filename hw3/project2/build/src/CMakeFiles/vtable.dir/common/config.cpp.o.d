@@ -1,7 +1,13 @@
 src/CMakeFiles/vtable.dir/common/config.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/common/config.cpp \
  /usr/include/stdc-predef.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/config.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/common/config.cpp \
+ /usr/include/stdc-predef.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/vtable/virtual_table.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/vtable/virtual_table.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/algorithm \
  /usr/include/c++/9/utility \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -162,7 +166,11 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/exception.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/uses_allocator.h \
@@ -177,6 +185,7 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/logger.h \
@@ -189,6 +198,20 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/c++/9/atomic /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/rwmutex.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/logger.h \
+ /usr/include/c++/9/ctime \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/string_utility.h \
+ /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/header_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h \
+ /usr/include/c++/9/atomic /usr/include/c++/9/chrono \
+ /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rwmutex.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/climits \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
@@ -201,14 +224,24 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h /usr/include/c++/9/mutex \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/vtable/virtual_table.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/buffer/lru_replacer.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/vtable/virtual_table.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/lru_replacer.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/buffer/replacer.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/hash/extendible_hash.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/replacer.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/hash/extendible_hash.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/bits/stl_multimap.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -217,6 +250,7 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/hash/hash_table.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/schema.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/column.h \
@@ -238,10 +272,34 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /usr/include/c++/9/future /usr/include/c++/9/bits/atomic_futex.h \
  /usr/include/c++/9/bits/std_function.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/disk/disk_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/hash/hash_table.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/schema.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/column.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/concurrency/transaction_manager.h \
+ /usr/include/c++/9/unordered_set /usr/include/c++/9/bits/unordered_set.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/concurrency/lock_manager.h \
+ /usr/include/c++/9/list /usr/include/c++/9/bits/stl_list.h \
+ /usr/include/c++/9/bits/list.tcc \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rid.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/concurrency/transaction.h \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/thread \
+ /home/blacktree/scu_database/hw3/project2/src/include/table/tuple.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/value.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/limits.h \
+ /usr/include/c++/9/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/logging/log_manager.h \
+ /usr/include/c++/9/future /usr/include/c++/9/bits/atomic_futex.h \
+ /usr/include/c++/9/bits/std_function.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/disk/disk_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/fstream /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/logging/log_record.h \
  /usr/include/c++/9/cassert /usr/include/assert.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/index/b_plus_tree_index.h \
@@ -259,3 +317,22 @@ src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o: \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/table/table_heap.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/page/table_page.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/table/table_iterator.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/logging/log_record.h \
+ /usr/include/c++/9/cassert /usr/include/assert.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/index/b_plus_tree_index.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/index/b_plus_tree.h \
+ /usr/include/c++/9/queue /usr/include/c++/9/bits/stl_queue.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/index/index_iterator.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/b_plus_tree_leaf_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/b_plus_tree_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/buffer_pool_manager.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/index/generic_key.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/b_plus_tree_internal_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/index/index.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/sqlite/sqlite3ext.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/sqlite/sqlite3.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/table/table_heap.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/table_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/table/table_iterator.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

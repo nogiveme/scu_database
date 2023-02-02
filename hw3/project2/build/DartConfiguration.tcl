@@ -4,8 +4,13 @@
 
 
 # Configuration directories and files
+<<<<<<< HEAD
 SourceDirectory: /home/blacktree/scu_database_bk/hw3/project2
 BuildDirectory: /home/blacktree/scu_database_bk/hw3/project2/build
+=======
+SourceDirectory: /home/blacktree/scu_database/hw3/project2
+BuildDirectory: /home/blacktree/scu_database/hw3/project2/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +32,11 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
+<<<<<<< HEAD
 ConfigureCommand: "/usr/local/bin/cmake" "/home/blacktree/scu_database_bk/hw3/project2"
+=======
+ConfigureCommand: "/usr/local/bin/cmake" "/home/blacktree/scu_database/hw3/project2"
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/page/header_page.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/page/header_page.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/page/header_page.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/cassert \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -137,16 +141,27 @@ src/CMakeFiles/vtable.dir/page/header_page.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/page/header_page.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/page/page.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/config.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/page/header_page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/page.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/chrono /usr/include/c++/9/ratio \
  /usr/include/c++/9/limits /usr/include/c++/9/ctime \
  /usr/include/c++/9/bits/parse_numbers.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/rwmutex.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rwmutex.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/climits \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \

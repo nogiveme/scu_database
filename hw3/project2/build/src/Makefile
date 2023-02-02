@@ -57,10 +57,17 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/blacktree/scu_database_bk/hw3/project2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blacktree/scu_database_bk/hw3/project2/build
+=======
+CMAKE_SOURCE_DIR = /home/blacktree/scu_database/hw3/project2
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/blacktree/scu_database/hw3/project2/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +104,24 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles /home/blacktree/scu_database_bk/hw3/project2/build/src//CMakeFiles/progress.marks
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles 0
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles /home/blacktree/scu_database/hw3/project2/build/src//CMakeFiles/progress.marks
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles 0
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +130,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/sqlite3.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sqlite3.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sqlite3.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : src/CMakeFiles/sqlite3.dir/rule
 
 # Convenience name for target.
@@ -137,12 +170,20 @@ sqlite3: src/CMakeFiles/sqlite3.dir/rule
 
 # fast build rule for target.
 sqlite3/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite3/fast
 
 # Convenience name for target.
 src/CMakeFiles/sqlite3_shell.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sqlite3_shell.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/sqlite3_shell.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : src/CMakeFiles/sqlite3_shell.dir/rule
 
 # Convenience name for target.
@@ -151,12 +192,20 @@ sqlite3_shell: src/CMakeFiles/sqlite3_shell.dir/rule
 
 # fast build rule for target.
 sqlite3_shell/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite3_shell/fast
 
 # Convenience name for target.
 src/CMakeFiles/vtable.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/vtable.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/vtable.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : src/CMakeFiles/vtable.dir/rule
 
 # Convenience name for target.
@@ -165,7 +214,11 @@ vtable: src/CMakeFiles/vtable.dir/rule
 
 # fast build rule for target.
 vtable/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/fast
 
 buffer/buffer_pool_manager.o: buffer/buffer_pool_manager.cpp.o
@@ -173,7 +226,11 @@ buffer/buffer_pool_manager.o: buffer/buffer_pool_manager.cpp.o
 
 # target to build an object file
 buffer/buffer_pool_manager.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager.cpp.o
 
 buffer/buffer_pool_manager.i: buffer/buffer_pool_manager.cpp.i
@@ -181,7 +238,11 @@ buffer/buffer_pool_manager.i: buffer/buffer_pool_manager.cpp.i
 
 # target to preprocess a source file
 buffer/buffer_pool_manager.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager.cpp.i
 
 buffer/buffer_pool_manager.s: buffer/buffer_pool_manager.cpp.s
@@ -189,7 +250,11 @@ buffer/buffer_pool_manager.s: buffer/buffer_pool_manager.cpp.s
 
 # target to generate assembly for a file
 buffer/buffer_pool_manager.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager.cpp.s
 
 buffer/lru_replacer.o: buffer/lru_replacer.cpp.o
@@ -197,7 +262,11 @@ buffer/lru_replacer.o: buffer/lru_replacer.cpp.o
 
 # target to build an object file
 buffer/lru_replacer.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer.cpp.o
 
 buffer/lru_replacer.i: buffer/lru_replacer.cpp.i
@@ -205,7 +274,11 @@ buffer/lru_replacer.i: buffer/lru_replacer.cpp.i
 
 # target to preprocess a source file
 buffer/lru_replacer.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer.cpp.i
 
 buffer/lru_replacer.s: buffer/lru_replacer.cpp.s
@@ -213,7 +286,11 @@ buffer/lru_replacer.s: buffer/lru_replacer.cpp.s
 
 # target to generate assembly for a file
 buffer/lru_replacer.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/buffer/lru_replacer.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer.cpp.s
 
 catalog/column.o: catalog/column.cpp.o
@@ -221,7 +298,11 @@ catalog/column.o: catalog/column.cpp.o
 
 # target to build an object file
 catalog/column.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/column.cpp.o
 
 catalog/column.i: catalog/column.cpp.i
@@ -229,7 +310,11 @@ catalog/column.i: catalog/column.cpp.i
 
 # target to preprocess a source file
 catalog/column.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/column.cpp.i
 
 catalog/column.s: catalog/column.cpp.s
@@ -237,7 +322,11 @@ catalog/column.s: catalog/column.cpp.s
 
 # target to generate assembly for a file
 catalog/column.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/column.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/column.cpp.s
 
 catalog/schema.o: catalog/schema.cpp.o
@@ -245,7 +334,11 @@ catalog/schema.o: catalog/schema.cpp.o
 
 # target to build an object file
 catalog/schema.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/schema.cpp.o
 
 catalog/schema.i: catalog/schema.cpp.i
@@ -253,7 +346,11 @@ catalog/schema.i: catalog/schema.cpp.i
 
 # target to preprocess a source file
 catalog/schema.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/schema.cpp.i
 
 catalog/schema.s: catalog/schema.cpp.s
@@ -261,7 +358,11 @@ catalog/schema.s: catalog/schema.cpp.s
 
 # target to generate assembly for a file
 catalog/schema.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/catalog/schema.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : catalog/schema.cpp.s
 
 common/config.o: common/config.cpp.o
@@ -269,7 +370,11 @@ common/config.o: common/config.cpp.o
 
 # target to build an object file
 common/config.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/config.cpp.o
 
 common/config.i: common/config.cpp.i
@@ -277,7 +382,11 @@ common/config.i: common/config.cpp.i
 
 # target to preprocess a source file
 common/config.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/config.cpp.i
 
 common/config.s: common/config.cpp.s
@@ -285,7 +394,11 @@ common/config.s: common/config.cpp.s
 
 # target to generate assembly for a file
 common/config.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/common/config.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/config.cpp.s
 
 concurrency/lock_manager.o: concurrency/lock_manager.cpp.o
@@ -293,7 +406,11 @@ concurrency/lock_manager.o: concurrency/lock_manager.cpp.o
 
 # target to build an object file
 concurrency/lock_manager.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager.cpp.o
 
 concurrency/lock_manager.i: concurrency/lock_manager.cpp.i
@@ -301,7 +418,11 @@ concurrency/lock_manager.i: concurrency/lock_manager.cpp.i
 
 # target to preprocess a source file
 concurrency/lock_manager.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager.cpp.i
 
 concurrency/lock_manager.s: concurrency/lock_manager.cpp.s
@@ -309,7 +430,11 @@ concurrency/lock_manager.s: concurrency/lock_manager.cpp.s
 
 # target to generate assembly for a file
 concurrency/lock_manager.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager.cpp.s
 
 concurrency/transaction_manager.o: concurrency/transaction_manager.cpp.o
@@ -317,7 +442,11 @@ concurrency/transaction_manager.o: concurrency/transaction_manager.cpp.o
 
 # target to build an object file
 concurrency/transaction_manager.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/transaction_manager.cpp.o
 
 concurrency/transaction_manager.i: concurrency/transaction_manager.cpp.i
@@ -325,7 +454,11 @@ concurrency/transaction_manager.i: concurrency/transaction_manager.cpp.i
 
 # target to preprocess a source file
 concurrency/transaction_manager.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/transaction_manager.cpp.i
 
 concurrency/transaction_manager.s: concurrency/transaction_manager.cpp.s
@@ -333,7 +466,11 @@ concurrency/transaction_manager.s: concurrency/transaction_manager.cpp.s
 
 # target to generate assembly for a file
 concurrency/transaction_manager.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/concurrency/transaction_manager.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/transaction_manager.cpp.s
 
 disk/disk_manager.o: disk/disk_manager.cpp.o
@@ -341,7 +478,11 @@ disk/disk_manager.o: disk/disk_manager.cpp.o
 
 # target to build an object file
 disk/disk_manager.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : disk/disk_manager.cpp.o
 
 disk/disk_manager.i: disk/disk_manager.cpp.i
@@ -349,7 +490,11 @@ disk/disk_manager.i: disk/disk_manager.cpp.i
 
 # target to preprocess a source file
 disk/disk_manager.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : disk/disk_manager.cpp.i
 
 disk/disk_manager.s: disk/disk_manager.cpp.s
@@ -357,7 +502,11 @@ disk/disk_manager.s: disk/disk_manager.cpp.s
 
 # target to generate assembly for a file
 disk/disk_manager.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : disk/disk_manager.cpp.s
 
 hash/extendible_hash.o: hash/extendible_hash.cpp.o
@@ -365,7 +514,11 @@ hash/extendible_hash.o: hash/extendible_hash.cpp.o
 
 # target to build an object file
 hash/extendible_hash.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash.cpp.o
 
 hash/extendible_hash.i: hash/extendible_hash.cpp.i
@@ -373,7 +526,11 @@ hash/extendible_hash.i: hash/extendible_hash.cpp.i
 
 # target to preprocess a source file
 hash/extendible_hash.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash.cpp.i
 
 hash/extendible_hash.s: hash/extendible_hash.cpp.s
@@ -381,7 +538,11 @@ hash/extendible_hash.s: hash/extendible_hash.cpp.s
 
 # target to generate assembly for a file
 hash/extendible_hash.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/hash/extendible_hash.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash.cpp.s
 
 index/b_plus_tree.o: index/b_plus_tree.cpp.o
@@ -389,7 +550,11 @@ index/b_plus_tree.o: index/b_plus_tree.cpp.o
 
 # target to build an object file
 index/b_plus_tree.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree.cpp.o
 
 index/b_plus_tree.i: index/b_plus_tree.cpp.i
@@ -397,7 +562,11 @@ index/b_plus_tree.i: index/b_plus_tree.cpp.i
 
 # target to preprocess a source file
 index/b_plus_tree.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree.cpp.i
 
 index/b_plus_tree.s: index/b_plus_tree.cpp.s
@@ -405,7 +574,11 @@ index/b_plus_tree.s: index/b_plus_tree.cpp.s
 
 # target to generate assembly for a file
 index/b_plus_tree.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree.cpp.s
 
 index/b_plus_tree_index.o: index/b_plus_tree_index.cpp.o
@@ -413,7 +586,11 @@ index/b_plus_tree_index.o: index/b_plus_tree_index.cpp.o
 
 # target to build an object file
 index/b_plus_tree_index.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_index.cpp.o
 
 index/b_plus_tree_index.i: index/b_plus_tree_index.cpp.i
@@ -421,7 +598,11 @@ index/b_plus_tree_index.i: index/b_plus_tree_index.cpp.i
 
 # target to preprocess a source file
 index/b_plus_tree_index.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_index.cpp.i
 
 index/b_plus_tree_index.s: index/b_plus_tree_index.cpp.s
@@ -429,7 +610,11 @@ index/b_plus_tree_index.s: index/b_plus_tree_index.cpp.s
 
 # target to generate assembly for a file
 index/b_plus_tree_index.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/b_plus_tree_index.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_index.cpp.s
 
 index/index_iterator.o: index/index_iterator.cpp.o
@@ -437,7 +622,11 @@ index/index_iterator.o: index/index_iterator.cpp.o
 
 # target to build an object file
 index/index_iterator.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/index_iterator.cpp.o
 
 index/index_iterator.i: index/index_iterator.cpp.i
@@ -445,7 +634,11 @@ index/index_iterator.i: index/index_iterator.cpp.i
 
 # target to preprocess a source file
 index/index_iterator.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/index_iterator.cpp.i
 
 index/index_iterator.s: index/index_iterator.cpp.s
@@ -453,7 +646,11 @@ index/index_iterator.s: index/index_iterator.cpp.s
 
 # target to generate assembly for a file
 index/index_iterator.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/index/index_iterator.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/index_iterator.cpp.s
 
 logging/log_manager.o: logging/log_manager.cpp.o
@@ -461,7 +658,11 @@ logging/log_manager.o: logging/log_manager.cpp.o
 
 # target to build an object file
 logging/log_manager.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager.cpp.o
 
 logging/log_manager.i: logging/log_manager.cpp.i
@@ -469,7 +670,11 @@ logging/log_manager.i: logging/log_manager.cpp.i
 
 # target to preprocess a source file
 logging/log_manager.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager.cpp.i
 
 logging/log_manager.s: logging/log_manager.cpp.s
@@ -477,7 +682,11 @@ logging/log_manager.s: logging/log_manager.cpp.s
 
 # target to generate assembly for a file
 logging/log_manager.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_manager.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager.cpp.s
 
 logging/log_recovery.o: logging/log_recovery.cpp.o
@@ -485,7 +694,11 @@ logging/log_recovery.o: logging/log_recovery.cpp.o
 
 # target to build an object file
 logging/log_recovery.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_recovery.cpp.o
 
 logging/log_recovery.i: logging/log_recovery.cpp.i
@@ -493,7 +706,11 @@ logging/log_recovery.i: logging/log_recovery.cpp.i
 
 # target to preprocess a source file
 logging/log_recovery.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_recovery.cpp.i
 
 logging/log_recovery.s: logging/log_recovery.cpp.s
@@ -501,7 +718,11 @@ logging/log_recovery.s: logging/log_recovery.cpp.s
 
 # target to generate assembly for a file
 logging/log_recovery.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/logging/log_recovery.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_recovery.cpp.s
 
 page/b_plus_tree_internal_page.o: page/b_plus_tree_internal_page.cpp.o
@@ -509,7 +730,11 @@ page/b_plus_tree_internal_page.o: page/b_plus_tree_internal_page.cpp.o
 
 # target to build an object file
 page/b_plus_tree_internal_page.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_internal_page.cpp.o
 
 page/b_plus_tree_internal_page.i: page/b_plus_tree_internal_page.cpp.i
@@ -517,7 +742,11 @@ page/b_plus_tree_internal_page.i: page/b_plus_tree_internal_page.cpp.i
 
 # target to preprocess a source file
 page/b_plus_tree_internal_page.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_internal_page.cpp.i
 
 page/b_plus_tree_internal_page.s: page/b_plus_tree_internal_page.cpp.s
@@ -525,7 +754,11 @@ page/b_plus_tree_internal_page.s: page/b_plus_tree_internal_page.cpp.s
 
 # target to generate assembly for a file
 page/b_plus_tree_internal_page.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_internal_page.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_internal_page.cpp.s
 
 page/b_plus_tree_leaf_page.o: page/b_plus_tree_leaf_page.cpp.o
@@ -533,7 +766,11 @@ page/b_plus_tree_leaf_page.o: page/b_plus_tree_leaf_page.cpp.o
 
 # target to build an object file
 page/b_plus_tree_leaf_page.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_leaf_page.cpp.o
 
 page/b_plus_tree_leaf_page.i: page/b_plus_tree_leaf_page.cpp.i
@@ -541,7 +778,11 @@ page/b_plus_tree_leaf_page.i: page/b_plus_tree_leaf_page.cpp.i
 
 # target to preprocess a source file
 page/b_plus_tree_leaf_page.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_leaf_page.cpp.i
 
 page/b_plus_tree_leaf_page.s: page/b_plus_tree_leaf_page.cpp.s
@@ -549,7 +790,11 @@ page/b_plus_tree_leaf_page.s: page/b_plus_tree_leaf_page.cpp.s
 
 # target to generate assembly for a file
 page/b_plus_tree_leaf_page.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_leaf_page.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_leaf_page.cpp.s
 
 page/b_plus_tree_page.o: page/b_plus_tree_page.cpp.o
@@ -557,7 +802,11 @@ page/b_plus_tree_page.o: page/b_plus_tree_page.cpp.o
 
 # target to build an object file
 page/b_plus_tree_page.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_page.cpp.o
 
 page/b_plus_tree_page.i: page/b_plus_tree_page.cpp.i
@@ -565,7 +814,11 @@ page/b_plus_tree_page.i: page/b_plus_tree_page.cpp.i
 
 # target to preprocess a source file
 page/b_plus_tree_page.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_page.cpp.i
 
 page/b_plus_tree_page.s: page/b_plus_tree_page.cpp.s
@@ -573,7 +826,11 @@ page/b_plus_tree_page.s: page/b_plus_tree_page.cpp.s
 
 # target to generate assembly for a file
 page/b_plus_tree_page.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/b_plus_tree_page.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/b_plus_tree_page.cpp.s
 
 page/header_page.o: page/header_page.cpp.o
@@ -581,7 +838,11 @@ page/header_page.o: page/header_page.cpp.o
 
 # target to build an object file
 page/header_page.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/header_page.cpp.o
 
 page/header_page.i: page/header_page.cpp.i
@@ -589,7 +850,11 @@ page/header_page.i: page/header_page.cpp.i
 
 # target to preprocess a source file
 page/header_page.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/header_page.cpp.i
 
 page/header_page.s: page/header_page.cpp.s
@@ -597,7 +862,11 @@ page/header_page.s: page/header_page.cpp.s
 
 # target to generate assembly for a file
 page/header_page.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/header_page.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/header_page.cpp.s
 
 page/table_page.o: page/table_page.cpp.o
@@ -605,7 +874,11 @@ page/table_page.o: page/table_page.cpp.o
 
 # target to build an object file
 page/table_page.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/table_page.cpp.o
 
 page/table_page.i: page/table_page.cpp.i
@@ -613,7 +886,11 @@ page/table_page.i: page/table_page.cpp.i
 
 # target to preprocess a source file
 page/table_page.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/table_page.cpp.i
 
 page/table_page.s: page/table_page.cpp.s
@@ -621,7 +898,11 @@ page/table_page.s: page/table_page.cpp.s
 
 # target to generate assembly for a file
 page/table_page.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/page/table_page.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : page/table_page.cpp.s
 
 sqlite/shell.o: sqlite/shell.c.o
@@ -629,7 +910,11 @@ sqlite/shell.o: sqlite/shell.c.o
 
 # target to build an object file
 sqlite/shell.c.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/shell.c.o
 
 sqlite/shell.i: sqlite/shell.c.i
@@ -637,7 +922,11 @@ sqlite/shell.i: sqlite/shell.c.i
 
 # target to preprocess a source file
 sqlite/shell.c.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/shell.c.i
 
 sqlite/shell.s: sqlite/shell.c.s
@@ -645,7 +934,11 @@ sqlite/shell.s: sqlite/shell.c.s
 
 # target to generate assembly for a file
 sqlite/shell.c.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3_shell.dir/build.make src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/shell.c.s
 
 sqlite/sqlite3.o: sqlite/sqlite3.c.o
@@ -653,7 +946,11 @@ sqlite/sqlite3.o: sqlite/sqlite3.c.o
 
 # target to build an object file
 sqlite/sqlite3.c.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/sqlite3.c.o
 
 sqlite/sqlite3.i: sqlite/sqlite3.c.i
@@ -661,7 +958,11 @@ sqlite/sqlite3.i: sqlite/sqlite3.c.i
 
 # target to preprocess a source file
 sqlite/sqlite3.c.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/sqlite3.c.i
 
 sqlite/sqlite3.s: sqlite/sqlite3.c.s
@@ -669,7 +970,11 @@ sqlite/sqlite3.s: sqlite/sqlite3.c.s
 
 # target to generate assembly for a file
 sqlite/sqlite3.c.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/sqlite3.dir/build.make src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : sqlite/sqlite3.c.s
 
 table/table_heap.o: table/table_heap.cpp.o
@@ -677,7 +982,11 @@ table/table_heap.o: table/table_heap.cpp.o
 
 # target to build an object file
 table/table_heap.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_heap.cpp.o
 
 table/table_heap.i: table/table_heap.cpp.i
@@ -685,7 +994,11 @@ table/table_heap.i: table/table_heap.cpp.i
 
 # target to preprocess a source file
 table/table_heap.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_heap.cpp.i
 
 table/table_heap.s: table/table_heap.cpp.s
@@ -693,7 +1006,11 @@ table/table_heap.s: table/table_heap.cpp.s
 
 # target to generate assembly for a file
 table/table_heap.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_heap.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_heap.cpp.s
 
 table/table_iterator.o: table/table_iterator.cpp.o
@@ -701,7 +1018,11 @@ table/table_iterator.o: table/table_iterator.cpp.o
 
 # target to build an object file
 table/table_iterator.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_iterator.cpp.o
 
 table/table_iterator.i: table/table_iterator.cpp.i
@@ -709,7 +1030,11 @@ table/table_iterator.i: table/table_iterator.cpp.i
 
 # target to preprocess a source file
 table/table_iterator.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_iterator.cpp.i
 
 table/table_iterator.s: table/table_iterator.cpp.s
@@ -717,7 +1042,11 @@ table/table_iterator.s: table/table_iterator.cpp.s
 
 # target to generate assembly for a file
 table/table_iterator.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/table_iterator.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/table_iterator.cpp.s
 
 table/tuple.o: table/tuple.cpp.o
@@ -725,7 +1054,11 @@ table/tuple.o: table/tuple.cpp.o
 
 # target to build an object file
 table/tuple.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple.cpp.o
 
 table/tuple.i: table/tuple.cpp.i
@@ -733,7 +1066,11 @@ table/tuple.i: table/tuple.cpp.i
 
 # target to preprocess a source file
 table/tuple.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple.cpp.i
 
 table/tuple.s: table/tuple.cpp.s
@@ -741,7 +1078,11 @@ table/tuple.s: table/tuple.cpp.s
 
 # target to generate assembly for a file
 table/tuple.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/table/tuple.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple.cpp.s
 
 type/bigint_type.o: type/bigint_type.cpp.o
@@ -749,7 +1090,11 @@ type/bigint_type.o: type/bigint_type.cpp.o
 
 # target to build an object file
 type/bigint_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/bigint_type.cpp.o
 
 type/bigint_type.i: type/bigint_type.cpp.i
@@ -757,7 +1102,11 @@ type/bigint_type.i: type/bigint_type.cpp.i
 
 # target to preprocess a source file
 type/bigint_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/bigint_type.cpp.i
 
 type/bigint_type.s: type/bigint_type.cpp.s
@@ -765,7 +1114,11 @@ type/bigint_type.s: type/bigint_type.cpp.s
 
 # target to generate assembly for a file
 type/bigint_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/bigint_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/bigint_type.cpp.s
 
 type/boolean_type.o: type/boolean_type.cpp.o
@@ -773,7 +1126,11 @@ type/boolean_type.o: type/boolean_type.cpp.o
 
 # target to build an object file
 type/boolean_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/boolean_type.cpp.o
 
 type/boolean_type.i: type/boolean_type.cpp.i
@@ -781,7 +1138,11 @@ type/boolean_type.i: type/boolean_type.cpp.i
 
 # target to preprocess a source file
 type/boolean_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/boolean_type.cpp.i
 
 type/boolean_type.s: type/boolean_type.cpp.s
@@ -789,7 +1150,11 @@ type/boolean_type.s: type/boolean_type.cpp.s
 
 # target to generate assembly for a file
 type/boolean_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/boolean_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/boolean_type.cpp.s
 
 type/decimal_type.o: type/decimal_type.cpp.o
@@ -797,7 +1162,11 @@ type/decimal_type.o: type/decimal_type.cpp.o
 
 # target to build an object file
 type/decimal_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/decimal_type.cpp.o
 
 type/decimal_type.i: type/decimal_type.cpp.i
@@ -805,7 +1174,11 @@ type/decimal_type.i: type/decimal_type.cpp.i
 
 # target to preprocess a source file
 type/decimal_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/decimal_type.cpp.i
 
 type/decimal_type.s: type/decimal_type.cpp.s
@@ -813,7 +1186,11 @@ type/decimal_type.s: type/decimal_type.cpp.s
 
 # target to generate assembly for a file
 type/decimal_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/decimal_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/decimal_type.cpp.s
 
 type/integer_parent_type.o: type/integer_parent_type.cpp.o
@@ -821,7 +1198,11 @@ type/integer_parent_type.o: type/integer_parent_type.cpp.o
 
 # target to build an object file
 type/integer_parent_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_parent_type.cpp.o
 
 type/integer_parent_type.i: type/integer_parent_type.cpp.i
@@ -829,7 +1210,11 @@ type/integer_parent_type.i: type/integer_parent_type.cpp.i
 
 # target to preprocess a source file
 type/integer_parent_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_parent_type.cpp.i
 
 type/integer_parent_type.s: type/integer_parent_type.cpp.s
@@ -837,7 +1222,11 @@ type/integer_parent_type.s: type/integer_parent_type.cpp.s
 
 # target to generate assembly for a file
 type/integer_parent_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_parent_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_parent_type.cpp.s
 
 type/integer_type.o: type/integer_type.cpp.o
@@ -845,7 +1234,11 @@ type/integer_type.o: type/integer_type.cpp.o
 
 # target to build an object file
 type/integer_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_type.cpp.o
 
 type/integer_type.i: type/integer_type.cpp.i
@@ -853,7 +1246,11 @@ type/integer_type.i: type/integer_type.cpp.i
 
 # target to preprocess a source file
 type/integer_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_type.cpp.i
 
 type/integer_type.s: type/integer_type.cpp.s
@@ -861,7 +1258,11 @@ type/integer_type.s: type/integer_type.cpp.s
 
 # target to generate assembly for a file
 type/integer_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/integer_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/integer_type.cpp.s
 
 type/smallint_type.o: type/smallint_type.cpp.o
@@ -869,7 +1270,11 @@ type/smallint_type.o: type/smallint_type.cpp.o
 
 # target to build an object file
 type/smallint_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/smallint_type.cpp.o
 
 type/smallint_type.i: type/smallint_type.cpp.i
@@ -877,7 +1282,11 @@ type/smallint_type.i: type/smallint_type.cpp.i
 
 # target to preprocess a source file
 type/smallint_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/smallint_type.cpp.i
 
 type/smallint_type.s: type/smallint_type.cpp.s
@@ -885,7 +1294,11 @@ type/smallint_type.s: type/smallint_type.cpp.s
 
 # target to generate assembly for a file
 type/smallint_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/smallint_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/smallint_type.cpp.s
 
 type/tinyint_type.o: type/tinyint_type.cpp.o
@@ -893,7 +1306,11 @@ type/tinyint_type.o: type/tinyint_type.cpp.o
 
 # target to build an object file
 type/tinyint_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/tinyint_type.cpp.o
 
 type/tinyint_type.i: type/tinyint_type.cpp.i
@@ -901,7 +1318,11 @@ type/tinyint_type.i: type/tinyint_type.cpp.i
 
 # target to preprocess a source file
 type/tinyint_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/tinyint_type.cpp.i
 
 type/tinyint_type.s: type/tinyint_type.cpp.s
@@ -909,7 +1330,11 @@ type/tinyint_type.s: type/tinyint_type.cpp.s
 
 # target to generate assembly for a file
 type/tinyint_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/tinyint_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/tinyint_type.cpp.s
 
 type/type.o: type/type.cpp.o
@@ -917,7 +1342,11 @@ type/type.o: type/type.cpp.o
 
 # target to build an object file
 type/type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type.cpp.o
 
 type/type.i: type/type.cpp.i
@@ -925,7 +1354,11 @@ type/type.i: type/type.cpp.i
 
 # target to preprocess a source file
 type/type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type.cpp.i
 
 type/type.s: type/type.cpp.s
@@ -933,7 +1366,11 @@ type/type.s: type/type.cpp.s
 
 # target to generate assembly for a file
 type/type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type.cpp.s
 
 type/value.o: type/value.cpp.o
@@ -941,7 +1378,11 @@ type/value.o: type/value.cpp.o
 
 # target to build an object file
 type/value.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/value.cpp.o
 
 type/value.i: type/value.cpp.i
@@ -949,7 +1390,11 @@ type/value.i: type/value.cpp.i
 
 # target to preprocess a source file
 type/value.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/value.cpp.i
 
 type/value.s: type/value.cpp.s
@@ -957,7 +1402,11 @@ type/value.s: type/value.cpp.s
 
 # target to generate assembly for a file
 type/value.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/value.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/value.cpp.s
 
 type/varlen_type.o: type/varlen_type.cpp.o
@@ -965,7 +1414,11 @@ type/varlen_type.o: type/varlen_type.cpp.o
 
 # target to build an object file
 type/varlen_type.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/varlen_type.cpp.o
 
 type/varlen_type.i: type/varlen_type.cpp.i
@@ -973,7 +1426,11 @@ type/varlen_type.i: type/varlen_type.cpp.i
 
 # target to preprocess a source file
 type/varlen_type.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/varlen_type.cpp.i
 
 type/varlen_type.s: type/varlen_type.cpp.s
@@ -981,7 +1438,11 @@ type/varlen_type.s: type/varlen_type.cpp.s
 
 # target to generate assembly for a file
 type/varlen_type.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/type/varlen_type.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/varlen_type.cpp.s
 
 vtable/virtual_table.o: vtable/virtual_table.cpp.o
@@ -989,7 +1450,11 @@ vtable/virtual_table.o: vtable/virtual_table.cpp.o
 
 # target to build an object file
 vtable/virtual_table.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table.cpp.o
 
 vtable/virtual_table.i: vtable/virtual_table.cpp.i
@@ -997,7 +1462,11 @@ vtable/virtual_table.i: vtable/virtual_table.cpp.i
 
 # target to preprocess a source file
 vtable/virtual_table.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table.cpp.i
 
 vtable/virtual_table.s: vtable/virtual_table.cpp.s
@@ -1005,7 +1474,11 @@ vtable/virtual_table.s: vtable/virtual_table.cpp.s
 
 # target to generate assembly for a file
 vtable/virtual_table.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/vtable.dir/build.make src/CMakeFiles/vtable.dir/vtable/virtual_table.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table.cpp.s
 
 # Help Target
@@ -1136,6 +1609,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : cmake_check_build_system
 

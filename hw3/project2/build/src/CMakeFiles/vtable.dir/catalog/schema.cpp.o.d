@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/catalog/schema.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/catalog/schema.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/catalog/schema.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/algorithm \
  /usr/include/c++/9/utility \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -145,7 +149,11 @@ src/CMakeFiles/vtable.dir/catalog/schema.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/sstream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/schema.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/schema.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
@@ -163,8 +171,16 @@ src/CMakeFiles/vtable.dir/catalog/schema.cpp.o: \
  /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/column.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/exception.h \
  /usr/include/c++/9/iostream \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/column.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+ /usr/include/c++/9/iostream \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

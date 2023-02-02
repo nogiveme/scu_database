@@ -1,7 +1,13 @@
 src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/buffer/buffer_pool_manager.cpp \
  /usr/include/stdc-predef.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/buffer/buffer_pool_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/buffer/buffer_pool_manager.cpp \
+ /usr/include/stdc-predef.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/buffer_pool_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/list /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -150,13 +156,22 @@ src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/buffer/lru_replacer.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/lru_replacer.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/buffer/replacer.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/hash/extendible_hash.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/buffer/replacer.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/hash/extendible_hash.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
@@ -180,8 +195,13 @@ src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/hash/hash_table.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/disk/disk_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/hash/hash_table.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/disk/disk_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/atomic /usr/include/c++/9/fstream \
  /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
@@ -190,12 +210,18 @@ src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
  /usr/include/c++/9/thread /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/bits/atomic_futex.h \
  /usr/include/c++/9/bits/std_function.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/config.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/logging/log_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/logging/log_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/algorithm /usr/include/c++/9/bits/stl_algo.h \
  /usr/include/c++/9/bits/algorithmfwd.h \
  /usr/include/c++/9/bits/stl_heap.h \
  /usr/include/c++/9/bits/uniform_int_dist.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/logging/log_record.h \
  /usr/include/c++/9/cassert /usr/include/assert.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/table/tuple.h \
@@ -209,6 +235,21 @@ src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/value.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/limits.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/logging/log_record.h \
+ /usr/include/c++/9/cassert /usr/include/assert.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/table/tuple.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/schema.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/column.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rid.h \
+ /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/value.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/limits.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
  /usr/include/c++/9/climits \
@@ -220,5 +261,10 @@ src/CMakeFiles/vtable.dir/buffer/buffer_pool_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/page/page.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/rwmutex.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/page/page.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rwmutex.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

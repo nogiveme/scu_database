@@ -82,6 +82,7 @@ ValueType
 B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key,
                                        const KeyComparator &comparator) const {
   assert(GetSize() > 1);
+<<<<<<< HEAD
   int st = 1, ed = GetSize() - 1;
   while (st <= ed) { //find the last key in array <= input
     int mid = (ed - st) / 2 + st;
@@ -89,6 +90,22 @@ B_PLUS_TREE_INTERNAL_PAGE_TYPE::Lookup(const KeyType &key,
     else ed = mid - 1;
   }
   return array[st - 1].second;
+=======
+  int lft = 0, rht = GetSize() - 1;
+  // binary search
+  while(lft < rht) {
+    int mid = (lft + rht) / 2;
+    auto res = comparator(key, array[mid].first);
+    if(res < 0) {
+      rht = mid - 1;
+    } else if(res > 0) {
+      lft = mid + 1;
+    } else {
+      return array[mid].second;
+    }
+  }
+  return -1;
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 }
 
 /*****************************************************************************

@@ -1,7 +1,13 @@
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock-gtest-all.cc \
  /usr/include/stdc-predef.h \
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gtest/gtest.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock-gtest-all.cc \
+ /usr/include/stdc-predef.h \
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gtest/gtest.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/limits \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -250,7 +256,12 @@ test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/netdb.h \
  /usr/include/rpc/netdb.h /usr/include/x86_64-linux-gnu/bits/netdb.h \
  /usr/include/c++/9/climits \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock/gmock.h \
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gtest/gtest.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock/gmock.h \
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gtest/gtest.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h

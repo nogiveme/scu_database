@@ -1,7 +1,13 @@
 src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/concurrency/lock_manager.cpp \
  /usr/include/stdc-predef.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/concurrency/lock_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/concurrency/lock_manager.cpp \
+ /usr/include/stdc-predef.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/concurrency/lock_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/condition_variable /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/type_traits \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -151,7 +157,11 @@ src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h \
  /usr/include/c++/9/bits/erase_if.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/rid.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rid.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/sstream /usr/include/c++/9/istream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
@@ -167,6 +177,7 @@ src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/sstream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/config.h \
  /usr/include/c++/9/atomic \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/concurrency/transaction.h \
@@ -178,6 +189,19 @@ src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/9/iostream \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/rwmutex.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h \
+ /usr/include/c++/9/atomic \
+ /home/blacktree/scu_database/hw3/project2/src/include/concurrency/transaction.h \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/thread \
+ /usr/include/c++/9/unordered_set /usr/include/c++/9/bits/unordered_set.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/logger.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/page/page.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/9/iostream \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/rwmutex.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/climits \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
@@ -187,6 +211,7 @@ src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/table/tuple.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/catalog/schema.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
@@ -197,5 +222,17 @@ src/CMakeFiles/vtable.dir/concurrency/lock_manager.cpp.o: \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/value.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/limits.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/table/tuple.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/schema.h \
+ /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /home/blacktree/scu_database/hw3/project2/src/include/catalog/column.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/value.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/limits.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h

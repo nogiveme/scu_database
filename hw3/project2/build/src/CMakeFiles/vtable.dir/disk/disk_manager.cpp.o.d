@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/disk/disk_manager.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/disk/disk_manager.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -173,8 +177,13 @@ src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/logger.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/disk/disk_manager.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/logger.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/disk/disk_manager.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/atomic /usr/include/c++/9/fstream \
  /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
@@ -185,4 +194,8 @@ src/CMakeFiles/vtable.dir/disk/disk_manager.cpp.o: \
  /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/bits/atomic_futex.h \
  /usr/include/c++/9/bits/std_function.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/config.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/common/config.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

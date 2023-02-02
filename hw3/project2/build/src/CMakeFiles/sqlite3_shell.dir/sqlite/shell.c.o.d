@@ -1,5 +1,9 @@
 src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/sqlite/shell.c \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/sqlite/shell.c \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -50,7 +54,11 @@ src/CMakeFiles/sqlite3_shell.dir/sqlite/shell.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/assert.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/sqlite/../include/sqlite/sqlite3.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/sqlite/../include/sqlite/sqlite3.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/ctype.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \

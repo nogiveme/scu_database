@@ -1,5 +1,9 @@
 src/CMakeFiles/sqlite3.dir/sqlite/sqlite3.c.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/sqlite/sqlite3.c \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/sqlite/sqlite3.c \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

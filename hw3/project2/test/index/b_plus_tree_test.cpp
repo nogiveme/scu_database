@@ -76,6 +76,7 @@ TEST(BPlusTreeTests, InsertTest1) {
   delete bpm;
   remove("test.db");
   remove("test.log");
+  std::cout << "---------------------finish test1" << std::endl;
 }
 
 TEST(BPlusTreeTests, InsertTest2) {

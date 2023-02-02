@@ -1,4 +1,5 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-iX5rHM
 
 Run Build Command(s):/usr/bin/make -f Makefile cmTC_f7ab1/fast && /usr/bin/make  -f CMakeFiles/cmTC_f7ab1.dir/build.make CMakeFiles/cmTC_f7ab1.dir/build
@@ -9,14 +10,32 @@ Linking C executable cmTC_f7ab1
 /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7ab1.dir/link.txt --verbose=1
 /usr/bin/cc -rdynamic CMakeFiles/cmTC_f7ab1.dir/src.c.o -o cmTC_f7ab1 
 /usr/bin/ld: CMakeFiles/cmTC_f7ab1.dir/src.c.o: in function `main':
+=======
+Change Dir: /home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-v7qyG4
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1eff6/fast && /usr/bin/make  -f CMakeFiles/cmTC_1eff6.dir/build.make CMakeFiles/cmTC_1eff6.dir/build
+make[1]: Entering directory '/home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-v7qyG4'
+Building C object CMakeFiles/cmTC_1eff6.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1eff6.dir/src.c.o -c /home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-v7qyG4/src.c
+Linking C executable cmTC_1eff6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1eff6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1eff6.dir/src.c.o -o cmTC_1eff6 
+/usr/bin/ld: CMakeFiles/cmTC_1eff6.dir/src.c.o: in function `main':
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
+<<<<<<< HEAD
 make[1]: *** [CMakeFiles/cmTC_f7ab1.dir/build.make:99: cmTC_f7ab1] Error 1
 make[1]: Leaving directory '/home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-iX5rHM'
 make: *** [Makefile:127: cmTC_f7ab1/fast] Error 2
+=======
+make[1]: *** [CMakeFiles/cmTC_1eff6.dir/build.make:99: cmTC_1eff6] Error 1
+make[1]: Leaving directory '/home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-v7qyG4'
+make: *** [Makefile:127: cmTC_1eff6/fast] Error 2
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 
 Source file was:
@@ -42,6 +61,7 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-RpfGZI
 
 Run Build Command(s):/usr/bin/make -f Makefile cmTC_26daf/fast && /usr/bin/make  -f CMakeFiles/cmTC_26daf.dir/build.make CMakeFiles/cmTC_26daf.dir/build
@@ -56,6 +76,22 @@ collect2: error: ld returned 1 exit status
 make[1]: *** [CMakeFiles/cmTC_26daf.dir/build.make:99: cmTC_26daf] Error 1
 make[1]: Leaving directory '/home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-RpfGZI'
 make: *** [Makefile:127: cmTC_26daf/fast] Error 2
+=======
+Change Dir: /home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-i0SVH4
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6a8a9/fast && /usr/bin/make  -f CMakeFiles/cmTC_6a8a9.dir/build.make CMakeFiles/cmTC_6a8a9.dir/build
+make[1]: Entering directory '/home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-i0SVH4'
+Building C object CMakeFiles/cmTC_6a8a9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_6a8a9.dir/CheckFunctionExists.c.o -c /home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-i0SVH4/CheckFunctionExists.c
+Linking C executable cmTC_6a8a9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a8a9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_6a8a9.dir/CheckFunctionExists.c.o -o cmTC_6a8a9  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6a8a9.dir/build.make:99: cmTC_6a8a9] Error 1
+make[1]: Leaving directory '/home/blacktree/scu_database/hw3/project2/build/CMakeFiles/CMakeScratch/TryCompile-i0SVH4'
+make: *** [Makefile:127: cmTC_6a8a9/fast] Error 2
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 
 

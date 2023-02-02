@@ -1,5 +1,9 @@
 src/CMakeFiles/vtable.dir/type/boolean_type.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/type/boolean_type.cpp \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/type/boolean_type.cpp \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/cassert \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -10,8 +14,13 @@ src/CMakeFiles/vtable.dir/type/boolean_type.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
  /usr/include/assert.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/boolean_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/exception.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/boolean_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cstdio /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
@@ -159,11 +168,19 @@ src/CMakeFiles/vtable.dir/type/boolean_type.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/value.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/limits.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/value.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/limits.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
  /usr/include/c++/9/climits \

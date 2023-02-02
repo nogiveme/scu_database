@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/blacktree/scu_database_bk/hw3/project2
+=======
+# Install script for directory: /home/blacktree/scu_database/hw3/project2
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +16,11 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
+<<<<<<< HEAD
     set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+=======
+    set(CMAKE_INSTALL_CONFIG_NAME "")
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,8 +52,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/blacktree/scu_database_bk/hw3/project2/build/src/cmake_install.cmake")
   include("/home/blacktree/scu_database_bk/hw3/project2/build/test/cmake_install.cmake")
+=======
+  include("/home/blacktree/scu_database/hw3/project2/build/src/cmake_install.cmake")
+  include("/home/blacktree/scu_database/hw3/project2/build/test/cmake_install.cmake")
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 endif()
 
@@ -57,5 +70,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/home/blacktree/scu_database_bk/hw3/project2/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/blacktree/scu_database/hw3/project2/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

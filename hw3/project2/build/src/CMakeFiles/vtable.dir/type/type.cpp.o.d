@@ -1,7 +1,13 @@
 src/CMakeFiles/vtable.dir/type/type.cpp.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/type/type.cpp \
  /usr/include/stdc-predef.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/common/exception.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/type/type.cpp \
+ /usr/include/stdc-predef.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/common/exception.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cstdio \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -158,11 +164,19 @@ src/CMakeFiles/vtable.dir/type/type.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/type_id.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/bigint_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/integer_parent_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/numeric_type.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/type_id.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/bigint_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/integer_parent_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/numeric_type.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -173,9 +187,15 @@ src/CMakeFiles/vtable.dir/type/type.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/value.h \
  /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/limits.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/value.h \
+ /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/limits.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
  /usr/include/c++/9/climits \
@@ -187,9 +207,18 @@ src/CMakeFiles/vtable.dir/type/type.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/9/limits \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/boolean_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/decimal_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/integer_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/smallint_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/tinyint_type.h \
  /home/blacktree/scu_database_bk/hw3/project2/src/include/type/varlen_type.h
+=======
+ /home/blacktree/scu_database/hw3/project2/src/include/type/boolean_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/decimal_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/integer_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/smallint_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/tinyint_type.h \
+ /home/blacktree/scu_database/hw3/project2/src/include/type/varlen_type.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/blacktree/scu_database_bk/hw3/project2/src
+=======
+# Install script for directory: /home/blacktree/scu_database/hw3/project2/src
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +16,11 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
+<<<<<<< HEAD
     set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+=======
+    set(CMAKE_INSTALL_CONFIG_NAME "")
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()

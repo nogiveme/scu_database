@@ -69,6 +69,7 @@ INDEX_TEMPLATE_ARGUMENTS
 bool BPLUSTREE_TYPE::Insert(const KeyType &key, const ValueType &value,
                             Transaction *transaction) {
   if(IsEmpty()) {
+    std::cout << "start a new tree" << std::endl;
     StartNewTree(key, value, transaction);
     return true;
   }
@@ -119,12 +120,20 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
                                     Transaction *transaction) {
   // get leaf page
   auto leaf_raw_page = FindLeafPage(key, false, transaction, Operation::INSERT);
+<<<<<<< HEAD
+=======
+  std::cout << "found leaf page" << std::endl;
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
   B_PLUS_TREE_LEAF_PAGE_TYPE* leaf_page = reinterpret_cast<B_PLUS_TREE_LEAF_PAGE_TYPE*>(leaf_raw_page->GetData());
   
   // look up and insert
   ValueType vt;
   if(leaf_page->Lookup(key, vt, comparator_)){
     // duplicate
+<<<<<<< HEAD
+=======
+    std::cout << "b plus tree: duplicate pair" << std::endl;
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
     UnlockParentPage(leaf_raw_page, transaction, Operation::INSERT);
     UnlockPage(leaf_raw_page, transaction, Operation::INSERT);
     return false;
@@ -157,10 +166,16 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
     // }
 
     // insert 
+    std::cout << "page " << leaf_page->GetPageId() << ": start insert" << std::endl; 
     int cur_size = leaf_page->Insert(key, value, comparator_);
+    std::cout << "page " << leaf_page->GetPageId() << ": finish insert" << std::endl;
 
     // check full
     if(cur_size >= leaf_page->GetMaxSize()) {
+<<<<<<< HEAD
+=======
+      std::cout << "page " << leaf_page->GetPageId() << ": start split" << std::endl;
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
       // split
       auto n_leaf_page = Split(leaf_page);
@@ -174,6 +189,10 @@ bool BPLUSTREE_TYPE::InsertIntoLeaf(const KeyType &key, const ValueType &value,
 
       // unlock
       UnlockParentPage(leaf_raw_page, transaction, Operation::INSERT);
+<<<<<<< HEAD
+=======
+      std::cout << "page " << leaf_page->GetPageId() << ": finish spliting" << std::endl;
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
     }
     UnlockPage(leaf_raw_page, transaction, Operation::INSERT);
   }
@@ -249,9 +268,12 @@ void BPLUSTREE_TYPE::InsertIntoParent(BPlusTreePage *old_node,
     // get parent page
     parent_page_id = old_node->GetParentPageId();
     auto parent_raw_page = buffer_pool_manager_->FetchPage(parent_page_id);
+<<<<<<< HEAD
     if(parent_raw_page==nullptr){
       throw Exception(EXCEPTION_TYPE_INDEX, "Out of memory");
     }
+=======
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
     auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
                                           KeyComparator>*>(parent_raw_page->GetData());
 
@@ -572,6 +594,7 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
   auto child_raw_page = root_raw_page;
   BPlusTreePage* cur_page = root_page;
   while(!cur_page->IsLeafPage()){
+    std::cout << "not leaf" << std::endl;
     // get child page id
     auto cur_in_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
                                         KeyComparator>*>(cur_page);
@@ -594,8 +617,13 @@ Page *BPLUSTREE_TYPE::FindLeafPage(const KeyType &key,
 
     if(txn != nullptr){
       if(op==Operation::SEARCH || 
+<<<<<<< HEAD
       (op==Operation::INSERT && cur_page->GetSize() + 1 < cur_page->GetMaxSize())|| 
       (op==Operation::DELETE && cur_page->GetSize() - 1 > cur_page->GetMinSize())){
+=======
+      (op==Operation::INSERT && cur_page->GetSize() < cur_page->GetMaxSize())|| 
+      (op==Operation::DELETE && cur_page->GetSize() > cur_page->GetMinSize())){
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
         // Search, or current page is safe
         UnlockParentPage(child_raw_page, txn, op);
       }

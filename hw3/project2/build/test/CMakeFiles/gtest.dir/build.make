@@ -53,10 +53,17 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/blacktree/scu_database_bk/hw3/project2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blacktree/scu_database_bk/hw3/project2/build
+=======
+CMAKE_SOURCE_DIR = /home/blacktree/scu_database/hw3/project2
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/blacktree/scu_database/hw3/project2/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/gtest.dir/depend.make
@@ -70,6 +77,7 @@ include test/CMakeFiles/gtest.dir/progress.make
 include test/CMakeFiles/gtest.dir/flags.make
 
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: test/CMakeFiles/gtest.dir/flags.make
+<<<<<<< HEAD
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock-gtest-all.cc
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: test/CMakeFiles/gtest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o"
@@ -96,6 +104,34 @@ test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i: cmake_force
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s"
 	cd /home/blacktree/scu_database_bk/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock_main.cc -o CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s
+=======
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock-gtest-all.cc
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o: test/CMakeFiles/gtest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blacktree/scu_database/hw3/project2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o -MF CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o.d -o CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o -c /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock-gtest-all.cc
+
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.i"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock-gtest-all.cc > CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.i
+
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.s"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock-gtest-all.cc -o CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.s
+
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: test/CMakeFiles/gtest.dir/flags.make
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock_main.cc
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: test/CMakeFiles/gtest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/blacktree/scu_database/hw3/project2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o -MF CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o.d -o CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o -c /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock_main.cc
+
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock_main.cc > CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i
+
+test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock_main.cc -o CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Object files for target gtest
 gtest_OBJECTS = \
@@ -109,18 +145,31 @@ lib/libgtest.so: test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.
 lib/libgtest.so: test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o
 lib/libgtest.so: test/CMakeFiles/gtest.dir/build.make
 lib/libgtest.so: test/CMakeFiles/gtest.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../lib/libgtest.so"
 	cd /home/blacktree/scu_database_bk/hw3/project2/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/blacktree/scu_database/hw3/project2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../lib/libgtest.so"
+	cd /home/blacktree/scu_database/hw3/project2/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/gtest.dir/build: lib/libgtest.so
 .PHONY : test/CMakeFiles/gtest.dir/build
 
 test/CMakeFiles/gtest.dir/clean:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build/test && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/gtest.dir/clean
 
 test/CMakeFiles/gtest.dir/depend:
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blacktree/scu_database_bk/hw3/project2 /home/blacktree/scu_database_bk/hw3/project2/test /home/blacktree/scu_database_bk/hw3/project2/build /home/blacktree/scu_database_bk/hw3/project2/build/test /home/blacktree/scu_database_bk/hw3/project2/build/test/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build/test && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+.PHONY : test/CMakeFiles/gtest.dir/clean
+
+test/CMakeFiles/gtest.dir/depend:
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/blacktree/scu_database/hw3/project2 /home/blacktree/scu_database/hw3/project2/test /home/blacktree/scu_database/hw3/project2/build /home/blacktree/scu_database/hw3/project2/build/test /home/blacktree/scu_database/hw3/project2/build/test/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/gtest.dir/depend
 

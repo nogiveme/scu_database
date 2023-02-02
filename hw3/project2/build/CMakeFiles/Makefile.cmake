@@ -7,12 +7,21 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+<<<<<<< HEAD
   "/home/blacktree/scu_database_bk/hw3/project2/CMakeLists.txt"
   "CMakeFiles/3.25.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.0/CMakeSystem.cmake"
   "/home/blacktree/scu_database_bk/hw3/project2/src/CMakeLists.txt"
   "/home/blacktree/scu_database_bk/hw3/project2/test/CMakeLists.txt"
+=======
+  "/home/blacktree/scu_database/hw3/project2/CMakeLists.txt"
+  "CMakeFiles/3.25.0/CMakeCCompiler.cmake"
+  "CMakeFiles/3.25.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.25.0/CMakeSystem.cmake"
+  "/home/blacktree/scu_database/hw3/project2/src/CMakeLists.txt"
+  "/home/blacktree/scu_database/hw3/project2/test/CMakeLists.txt"
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
   "/usr/local/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in"
   "/usr/local/share/cmake-3.25/Modules/CMakeCCompilerABI.c"
   "/usr/local/share/cmake-3.25/Modules/CMakeCInformation.cmake"

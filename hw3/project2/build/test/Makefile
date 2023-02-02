@@ -57,10 +57,17 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/blacktree/scu_database_bk/hw3/project2
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/blacktree/scu_database_bk/hw3/project2/build
+=======
+CMAKE_SOURCE_DIR = /home/blacktree/scu_database/hw3/project2
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/blacktree/scu_database/hw3/project2/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +104,24 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles /home/blacktree/scu_database_bk/hw3/project2/build/test//CMakeFiles/progress.marks
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database_bk/hw3/project2/build/CMakeFiles 0
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles /home/blacktree/scu_database/hw3/project2/build/test//CMakeFiles/progress.marks
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/blacktree/scu_database/hw3/project2/build/CMakeFiles 0
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +130,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/gtest.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/gtest.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/gtest.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -137,12 +170,20 @@ gtest: test/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : gtest/fast
 
 # Convenience name for target.
 test/CMakeFiles/check.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/check.dir/rule
 
 # Convenience name for target.
@@ -151,12 +192,20 @@ check: test/CMakeFiles/check.dir/rule
 
 # fast build rule for target.
 check/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check.dir/build.make test/CMakeFiles/check.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check.dir/build.make test/CMakeFiles/check.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : check/fast
 
 # Convenience name for target.
 test/CMakeFiles/buffer_pool_manager_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_pool_manager_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_pool_manager_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/buffer_pool_manager_test.dir/rule
 
 # Convenience name for target.
@@ -165,12 +214,20 @@ buffer_pool_manager_test: test/CMakeFiles/buffer_pool_manager_test.dir/rule
 
 # fast build rule for target.
 buffer_pool_manager_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer_pool_manager_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/lru_replacer_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_replacer_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_replacer_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/lru_replacer_test.dir/rule
 
 # Convenience name for target.
@@ -179,12 +236,20 @@ lru_replacer_test: test/CMakeFiles/lru_replacer_test.dir/rule
 
 # fast build rule for target.
 lru_replacer_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : lru_replacer_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/rwmutex_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/rwmutex_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/rwmutex_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/rwmutex_test.dir/rule
 
 # Convenience name for target.
@@ -193,12 +258,20 @@ rwmutex_test: test/CMakeFiles/rwmutex_test.dir/rule
 
 # fast build rule for target.
 rwmutex_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : rwmutex_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/lock_manager_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_manager_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_manager_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/lock_manager_test.dir/rule
 
 # Convenience name for target.
@@ -207,12 +280,20 @@ lock_manager_test: test/CMakeFiles/lock_manager_test.dir/rule
 
 # fast build rule for target.
 lock_manager_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : lock_manager_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/extendible_hash_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/extendible_hash_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/extendible_hash_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/extendible_hash_test.dir/rule
 
 # Convenience name for target.
@@ -221,12 +302,20 @@ extendible_hash_test: test/CMakeFiles/extendible_hash_test.dir/rule
 
 # fast build rule for target.
 extendible_hash_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : extendible_hash_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
 
 # Convenience name for target.
@@ -235,12 +324,20 @@ b_plus_tree_concurrent_test: test/CMakeFiles/b_plus_tree_concurrent_test.dir/rul
 
 # fast build rule for target.
 b_plus_tree_concurrent_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : b_plus_tree_concurrent_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_print_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_print_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_print_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/b_plus_tree_print_test.dir/rule
 
 # Convenience name for target.
@@ -249,12 +346,20 @@ b_plus_tree_print_test: test/CMakeFiles/b_plus_tree_print_test.dir/rule
 
 # fast build rule for target.
 b_plus_tree_print_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : b_plus_tree_print_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/b_plus_tree_test.dir/rule
 
 # Convenience name for target.
@@ -263,12 +368,20 @@ b_plus_tree_test: test/CMakeFiles/b_plus_tree_test.dir/rule
 
 # fast build rule for target.
 b_plus_tree_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : b_plus_tree_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/log_manager_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/log_manager_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/log_manager_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/log_manager_test.dir/rule
 
 # Convenience name for target.
@@ -277,12 +390,20 @@ log_manager_test: test/CMakeFiles/log_manager_test.dir/rule
 
 # fast build rule for target.
 log_manager_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : log_manager_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/header_page_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/header_page_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/header_page_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/header_page_test.dir/rule
 
 # Convenience name for target.
@@ -291,12 +412,20 @@ header_page_test: test/CMakeFiles/header_page_test.dir/rule
 
 # fast build rule for target.
 header_page_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : header_page_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/tuple_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tuple_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tuple_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/tuple_test.dir/rule
 
 # Convenience name for target.
@@ -305,12 +434,20 @@ tuple_test: test/CMakeFiles/tuple_test.dir/rule
 
 # fast build rule for target.
 tuple_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : tuple_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/type_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/type_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/type_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/type_test.dir/rule
 
 # Convenience name for target.
@@ -319,12 +456,20 @@ type_test: test/CMakeFiles/type_test.dir/rule
 
 # fast build rule for target.
 type_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/virtual_table_test.dir/rule:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/virtual_table_test.dir/rule
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/virtual_table_test.dir/rule
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : test/CMakeFiles/virtual_table_test.dir/rule
 
 # Convenience name for target.
@@ -333,7 +478,11 @@ virtual_table_test: test/CMakeFiles/virtual_table_test.dir/rule
 
 # fast build rule for target.
 virtual_table_test/fast:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/build
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/build
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : virtual_table_test/fast
 
 __/third_party/gmock/gmock-gtest-all.o: __/third_party/gmock/gmock-gtest-all.cc.o
@@ -341,7 +490,11 @@ __/third_party/gmock/gmock-gtest-all.o: __/third_party/gmock/gmock-gtest-all.cc.
 
 # target to build an object file
 __/third_party/gmock/gmock-gtest-all.cc.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock-gtest-all.cc.o
 
 __/third_party/gmock/gmock-gtest-all.i: __/third_party/gmock/gmock-gtest-all.cc.i
@@ -349,7 +502,11 @@ __/third_party/gmock/gmock-gtest-all.i: __/third_party/gmock/gmock-gtest-all.cc.
 
 # target to preprocess a source file
 __/third_party/gmock/gmock-gtest-all.cc.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock-gtest-all.cc.i
 
 __/third_party/gmock/gmock-gtest-all.s: __/third_party/gmock/gmock-gtest-all.cc.s
@@ -357,7 +514,11 @@ __/third_party/gmock/gmock-gtest-all.s: __/third_party/gmock/gmock-gtest-all.cc.
 
 # target to generate assembly for a file
 __/third_party/gmock/gmock-gtest-all.cc.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock-gtest-all.cc.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock-gtest-all.cc.s
 
 __/third_party/gmock/gmock_main.o: __/third_party/gmock/gmock_main.cc.o
@@ -365,7 +526,11 @@ __/third_party/gmock/gmock_main.o: __/third_party/gmock/gmock_main.cc.o
 
 # target to build an object file
 __/third_party/gmock/gmock_main.cc.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock_main.cc.o
 
 __/third_party/gmock/gmock_main.i: __/third_party/gmock/gmock_main.cc.i
@@ -373,7 +538,11 @@ __/third_party/gmock/gmock_main.i: __/third_party/gmock/gmock_main.cc.i
 
 # target to preprocess a source file
 __/third_party/gmock/gmock_main.cc.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock_main.cc.i
 
 __/third_party/gmock/gmock_main.s: __/third_party/gmock/gmock_main.cc.s
@@ -381,7 +550,11 @@ __/third_party/gmock/gmock_main.s: __/third_party/gmock/gmock_main.cc.s
 
 # target to generate assembly for a file
 __/third_party/gmock/gmock_main.cc.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : __/third_party/gmock/gmock_main.cc.s
 
 buffer/buffer_pool_manager_test.o: buffer/buffer_pool_manager_test.cpp.o
@@ -389,7 +562,11 @@ buffer/buffer_pool_manager_test.o: buffer/buffer_pool_manager_test.cpp.o
 
 # target to build an object file
 buffer/buffer_pool_manager_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager_test.cpp.o
 
 buffer/buffer_pool_manager_test.i: buffer/buffer_pool_manager_test.cpp.i
@@ -397,7 +574,11 @@ buffer/buffer_pool_manager_test.i: buffer/buffer_pool_manager_test.cpp.i
 
 # target to preprocess a source file
 buffer/buffer_pool_manager_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager_test.cpp.i
 
 buffer/buffer_pool_manager_test.s: buffer/buffer_pool_manager_test.cpp.s
@@ -405,7 +586,11 @@ buffer/buffer_pool_manager_test.s: buffer/buffer_pool_manager_test.cpp.s
 
 # target to generate assembly for a file
 buffer/buffer_pool_manager_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/buffer_pool_manager_test.cpp.s
 
 buffer/lru_replacer_test.o: buffer/lru_replacer_test.cpp.o
@@ -413,7 +598,11 @@ buffer/lru_replacer_test.o: buffer/lru_replacer_test.cpp.o
 
 # target to build an object file
 buffer/lru_replacer_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer_test.cpp.o
 
 buffer/lru_replacer_test.i: buffer/lru_replacer_test.cpp.i
@@ -421,7 +610,11 @@ buffer/lru_replacer_test.i: buffer/lru_replacer_test.cpp.i
 
 # target to preprocess a source file
 buffer/lru_replacer_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer_test.cpp.i
 
 buffer/lru_replacer_test.s: buffer/lru_replacer_test.cpp.s
@@ -429,7 +622,11 @@ buffer/lru_replacer_test.s: buffer/lru_replacer_test.cpp.s
 
 # target to generate assembly for a file
 buffer/lru_replacer_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : buffer/lru_replacer_test.cpp.s
 
 common/rwmutex_test.o: common/rwmutex_test.cpp.o
@@ -437,7 +634,11 @@ common/rwmutex_test.o: common/rwmutex_test.cpp.o
 
 # target to build an object file
 common/rwmutex_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/rwmutex_test.cpp.o
 
 common/rwmutex_test.i: common/rwmutex_test.cpp.i
@@ -445,7 +646,11 @@ common/rwmutex_test.i: common/rwmutex_test.cpp.i
 
 # target to preprocess a source file
 common/rwmutex_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/rwmutex_test.cpp.i
 
 common/rwmutex_test.s: common/rwmutex_test.cpp.s
@@ -453,7 +658,11 @@ common/rwmutex_test.s: common/rwmutex_test.cpp.s
 
 # target to generate assembly for a file
 common/rwmutex_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwmutex_test.dir/build.make test/CMakeFiles/rwmutex_test.dir/common/rwmutex_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : common/rwmutex_test.cpp.s
 
 concurrency/lock_manager_test.o: concurrency/lock_manager_test.cpp.o
@@ -461,7 +670,11 @@ concurrency/lock_manager_test.o: concurrency/lock_manager_test.cpp.o
 
 # target to build an object file
 concurrency/lock_manager_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager_test.cpp.o
 
 concurrency/lock_manager_test.i: concurrency/lock_manager_test.cpp.i
@@ -469,7 +682,11 @@ concurrency/lock_manager_test.i: concurrency/lock_manager_test.cpp.i
 
 # target to preprocess a source file
 concurrency/lock_manager_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager_test.cpp.i
 
 concurrency/lock_manager_test.s: concurrency/lock_manager_test.cpp.s
@@ -477,7 +694,11 @@ concurrency/lock_manager_test.s: concurrency/lock_manager_test.cpp.s
 
 # target to generate assembly for a file
 concurrency/lock_manager_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : concurrency/lock_manager_test.cpp.s
 
 hash/extendible_hash_test.o: hash/extendible_hash_test.cpp.o
@@ -485,7 +706,11 @@ hash/extendible_hash_test.o: hash/extendible_hash_test.cpp.o
 
 # target to build an object file
 hash/extendible_hash_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash_test.cpp.o
 
 hash/extendible_hash_test.i: hash/extendible_hash_test.cpp.i
@@ -493,7 +718,11 @@ hash/extendible_hash_test.i: hash/extendible_hash_test.cpp.i
 
 # target to preprocess a source file
 hash/extendible_hash_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash_test.cpp.i
 
 hash/extendible_hash_test.s: hash/extendible_hash_test.cpp.s
@@ -501,7 +730,11 @@ hash/extendible_hash_test.s: hash/extendible_hash_test.cpp.s
 
 # target to generate assembly for a file
 hash/extendible_hash_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_test.dir/build.make test/CMakeFiles/extendible_hash_test.dir/hash/extendible_hash_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : hash/extendible_hash_test.cpp.s
 
 index/b_plus_tree_concurrent_test.o: index/b_plus_tree_concurrent_test.cpp.o
@@ -509,7 +742,11 @@ index/b_plus_tree_concurrent_test.o: index/b_plus_tree_concurrent_test.cpp.o
 
 # target to build an object file
 index/b_plus_tree_concurrent_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_concurrent_test.cpp.o
 
 index/b_plus_tree_concurrent_test.i: index/b_plus_tree_concurrent_test.cpp.i
@@ -517,7 +754,11 @@ index/b_plus_tree_concurrent_test.i: index/b_plus_tree_concurrent_test.cpp.i
 
 # target to preprocess a source file
 index/b_plus_tree_concurrent_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_concurrent_test.cpp.i
 
 index/b_plus_tree_concurrent_test.s: index/b_plus_tree_concurrent_test.cpp.s
@@ -525,7 +766,11 @@ index/b_plus_tree_concurrent_test.s: index/b_plus_tree_concurrent_test.cpp.s
 
 # target to generate assembly for a file
 index/b_plus_tree_concurrent_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/index/b_plus_tree_concurrent_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_concurrent_test.cpp.s
 
 index/b_plus_tree_print_test.o: index/b_plus_tree_print_test.cpp.o
@@ -533,7 +778,11 @@ index/b_plus_tree_print_test.o: index/b_plus_tree_print_test.cpp.o
 
 # target to build an object file
 index/b_plus_tree_print_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_print_test.cpp.o
 
 index/b_plus_tree_print_test.i: index/b_plus_tree_print_test.cpp.i
@@ -541,7 +790,11 @@ index/b_plus_tree_print_test.i: index/b_plus_tree_print_test.cpp.i
 
 # target to preprocess a source file
 index/b_plus_tree_print_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_print_test.cpp.i
 
 index/b_plus_tree_print_test.s: index/b_plus_tree_print_test.cpp.s
@@ -549,7 +802,11 @@ index/b_plus_tree_print_test.s: index/b_plus_tree_print_test.cpp.s
 
 # target to generate assembly for a file
 index/b_plus_tree_print_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_print_test.dir/build.make test/CMakeFiles/b_plus_tree_print_test.dir/index/b_plus_tree_print_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_print_test.cpp.s
 
 index/b_plus_tree_test.o: index/b_plus_tree_test.cpp.o
@@ -557,7 +814,11 @@ index/b_plus_tree_test.o: index/b_plus_tree_test.cpp.o
 
 # target to build an object file
 index/b_plus_tree_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_test.cpp.o
 
 index/b_plus_tree_test.i: index/b_plus_tree_test.cpp.i
@@ -565,7 +826,11 @@ index/b_plus_tree_test.i: index/b_plus_tree_test.cpp.i
 
 # target to preprocess a source file
 index/b_plus_tree_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_test.cpp.i
 
 index/b_plus_tree_test.s: index/b_plus_tree_test.cpp.s
@@ -573,7 +838,11 @@ index/b_plus_tree_test.s: index/b_plus_tree_test.cpp.s
 
 # target to generate assembly for a file
 index/b_plus_tree_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_test.dir/build.make test/CMakeFiles/b_plus_tree_test.dir/index/b_plus_tree_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : index/b_plus_tree_test.cpp.s
 
 logging/log_manager_test.o: logging/log_manager_test.cpp.o
@@ -581,7 +850,11 @@ logging/log_manager_test.o: logging/log_manager_test.cpp.o
 
 # target to build an object file
 logging/log_manager_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager_test.cpp.o
 
 logging/log_manager_test.i: logging/log_manager_test.cpp.i
@@ -589,7 +862,11 @@ logging/log_manager_test.i: logging/log_manager_test.cpp.i
 
 # target to preprocess a source file
 logging/log_manager_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager_test.cpp.i
 
 logging/log_manager_test.s: logging/log_manager_test.cpp.s
@@ -597,7 +874,11 @@ logging/log_manager_test.s: logging/log_manager_test.cpp.s
 
 # target to generate assembly for a file
 logging/log_manager_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/log_manager_test.dir/build.make test/CMakeFiles/log_manager_test.dir/logging/log_manager_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : logging/log_manager_test.cpp.s
 
 table/header_page_test.o: table/header_page_test.cpp.o
@@ -605,7 +886,11 @@ table/header_page_test.o: table/header_page_test.cpp.o
 
 # target to build an object file
 table/header_page_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/header_page_test.cpp.o
 
 table/header_page_test.i: table/header_page_test.cpp.i
@@ -613,7 +898,11 @@ table/header_page_test.i: table/header_page_test.cpp.i
 
 # target to preprocess a source file
 table/header_page_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/header_page_test.cpp.i
 
 table/header_page_test.s: table/header_page_test.cpp.s
@@ -621,7 +910,11 @@ table/header_page_test.s: table/header_page_test.cpp.s
 
 # target to generate assembly for a file
 table/header_page_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/header_page_test.dir/build.make test/CMakeFiles/header_page_test.dir/table/header_page_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/header_page_test.cpp.s
 
 table/tuple_test.o: table/tuple_test.cpp.o
@@ -629,7 +922,11 @@ table/tuple_test.o: table/tuple_test.cpp.o
 
 # target to build an object file
 table/tuple_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple_test.cpp.o
 
 table/tuple_test.i: table/tuple_test.cpp.i
@@ -637,7 +934,11 @@ table/tuple_test.i: table/tuple_test.cpp.i
 
 # target to preprocess a source file
 table/tuple_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple_test.cpp.i
 
 table/tuple_test.s: table/tuple_test.cpp.s
@@ -645,7 +946,11 @@ table/tuple_test.s: table/tuple_test.cpp.s
 
 # target to generate assembly for a file
 table/tuple_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : table/tuple_test.cpp.s
 
 type/type_test.o: type/type_test.cpp.o
@@ -653,7 +958,11 @@ type/type_test.o: type/type_test.cpp.o
 
 # target to build an object file
 type/type_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type_test.cpp.o
 
 type/type_test.i: type/type_test.cpp.i
@@ -661,7 +970,11 @@ type/type_test.i: type/type_test.cpp.i
 
 # target to preprocess a source file
 type/type_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type_test.cpp.i
 
 type/type_test.s: type/type_test.cpp.s
@@ -669,7 +982,11 @@ type/type_test.s: type/type_test.cpp.s
 
 # target to generate assembly for a file
 type/type_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : type/type_test.cpp.s
 
 vtable/virtual_table_test.o: vtable/virtual_table_test.cpp.o
@@ -677,7 +994,11 @@ vtable/virtual_table_test.o: vtable/virtual_table_test.cpp.o
 
 # target to build an object file
 vtable/virtual_table_test.cpp.o:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.o
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.o
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table_test.cpp.o
 
 vtable/virtual_table_test.i: vtable/virtual_table_test.cpp.i
@@ -685,7 +1006,11 @@ vtable/virtual_table_test.i: vtable/virtual_table_test.cpp.i
 
 # target to preprocess a source file
 vtable/virtual_table_test.cpp.i:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.i
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.i
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table_test.cpp.i
 
 vtable/virtual_table_test.s: vtable/virtual_table_test.cpp.s
@@ -693,7 +1018,11 @@ vtable/virtual_table_test.s: vtable/virtual_table_test.cpp.s
 
 # target to generate assembly for a file
 vtable/virtual_table_test.cpp.s:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.s
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/virtual_table_test.dir/build.make test/CMakeFiles/virtual_table_test.dir/vtable/virtual_table_test.cpp.s
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : vtable/virtual_table_test.cpp.s
 
 # Help Target
@@ -776,6 +1105,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/blacktree/scu_database_bk/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/blacktree/scu_database/hw3/project2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
 .PHONY : cmake_check_build_system
 

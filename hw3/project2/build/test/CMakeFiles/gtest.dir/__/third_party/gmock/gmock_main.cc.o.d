@@ -1,5 +1,9 @@
 test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock_main.cc \
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock_main.cc \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,7 +140,11 @@ test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gmock/gmock.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gmock/gmock.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/algorithm /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h /usr/include/c++/9/bits/stl_algo.h \
  /usr/include/c++/9/bits/algorithmfwd.h \
@@ -144,7 +152,11 @@ test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/c++/9/limits \
  /usr/include/assert.h /usr/include/c++/9/stdlib.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gtest/gtest.h \
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gtest/gtest.h \
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
@@ -229,4 +241,8 @@ test/CMakeFiles/gtest.dir/__/third_party/gmock/gmock_main.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+<<<<<<< HEAD
  /home/blacktree/scu_database_bk/hw3/project2/third_party/gmock/gtest/gtest.h
+=======
+ /home/blacktree/scu_database/hw3/project2/third_party/gmock/gtest/gtest.h
+>>>>>>> dfb4acf36093692d5426c536830c2219dc8cacad
