@@ -23,6 +23,18 @@ namespace scudb {
 
 template <typename K, typename V>
 class ExtendibleHash : public HashTable<K, V> {
+  struct bucket{
+    size_t local_dpt;
+    std::map<K,V> buffer;
+    std::mutex latch;
+
+    bucket():local_dpt(0) {
+      buffer.clear();
+    }
+    bucket(size_t _local_dpt):local_dpt(_local_dpt){
+      buffer.clear();
+    }
+  };
 public:
   // constructor
   ExtendibleHash(size_t size);
@@ -39,18 +51,7 @@ public:
 
 private:
   // add your own member variables here
-  struct bucket{
-    size_t local_dpt;
-    std::map<K,V> buffer;
-    std::mutex latch;
 
-    bucket():local_dpt(0) {
-      buffer.clear();
-    }
-    bucket(size_t _local_dpt):local_dpt(_local_dpt){
-      buffer.clear();
-    }
-  };
   size_t array_size;
   size_t global_dpt;
 

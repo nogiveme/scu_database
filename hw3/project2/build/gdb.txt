@@ -1,0 +1,3 @@
++tail -f gdb.txt | perl -pe 's/(\+)/\e[1;31m$1\e[0m/g'
+Undefined command: "tail".  Try "help".
++q

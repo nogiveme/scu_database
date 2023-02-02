@@ -61,9 +61,9 @@ public:
   void RemoveFromFile(const std::string &file_name,
                       Transaction *transaction = nullptr);
   // expose for test purpose
-  B_PLUS_TREE_LEAF_PAGE_TYPE *FindLeafPage(const KeyType &key,
+  Page *FindLeafPage(const KeyType &key,
                                            bool leftMost = false, 
-                                           Transaction txn = nullptr,
+                                           Transaction* txn = nullptr,
                                            Operation op = Operation::SEARCH);
 
 private:
@@ -75,7 +75,7 @@ private:
   
   void UnlockAllPage(Transaction* txn, Operation op);
   
-  void StartNewTree(const KeyType &key, const ValueType &value, Transaction txn);
+  void StartNewTree(const KeyType &key, const ValueType &value, Transaction* txn);
 
   bool InsertIntoLeaf(const KeyType &key, const ValueType &value,
                       Transaction *transaction = nullptr);
@@ -101,11 +101,17 @@ private:
 
   void UpdateRootPageId(int insert_record = false);
 
+  inline void LockRoot(){root_mutex_.lock();}
+
+  inline void UnlockRoot(){root_mutex_.unlock();}
+
   // member variable
   std::string index_name_;
   page_id_t root_page_id_;
   BufferPoolManager *buffer_pool_manager_;
   KeyComparator comparator_;
+
+  std::mutex root_mutex_; //mutex for root page id
 };
 
 } // namespace scudb

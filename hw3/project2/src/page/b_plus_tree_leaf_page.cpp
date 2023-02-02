@@ -55,7 +55,7 @@ int B_PLUS_TREE_LEAF_PAGE_TYPE::KeyIndex(
   // binary search
   int lft = 0, rht = size;
   while(lft < rht) {
-    mid = (lft + rht) / 2;
+    auto mid = (lft + rht) / 2;
     if(comparator(key, array[mid].first) <= 0) rht = mid;
     else lft = mid + 1;
   }
@@ -97,20 +97,32 @@ INDEX_TEMPLATE_ARGUMENTS
 int B_PLUS_TREE_LEAF_PAGE_TYPE::Insert(const KeyType &key,
                                        const ValueType &value,
                                        const KeyComparator &comparator) {
-  // detection
-  auto cur_size = GetSize();
-  assert(cur_size + 1 > GetMaxSize());
+  // empty or bigger than last value in the page
+  if (GetSize() == 0 || comparator(key, KeyAt(GetSize() - 1)) > 0) {
+    array[GetSize()] = {key, value};
+  } else if (comparator(key, array[0].first) < 0) {
+    memmove(array + 1, array, static_cast<size_t>(GetSize()*sizeof(MappingType)));
+    array[0] = {key, value};
+  } else {
+    int low = 0, high = GetSize() - 1, mid;
+    while (low < high && low + 1 != high) {
+      mid = low + (high - low)/2;
+      if (comparator(key, array[mid].first) < 0) {
+        high = mid;
+      } else if (comparator(key, array[mid].first) > 0) {
+        low = mid;
+      } else {
+        // only support unique key
+        assert(0);
+      }
+    }
+    memmove(array + high + 1, array + high,
+            static_cast<size_t>((GetSize() - high)*sizeof(MappingType)));
+    array[high] = {key, value};
+  }
 
-  auto index = KeyIndex(key, comparator);
-  auto pair = std::make_pair(key, value);
-  
-  // insert items
-  memmove(array + index + 1, array + index, (cur_size - index - 1) * sizeof(MappingType));
-  array[index] = pair;
-
-  // update size
   IncreaseSize(1);
-
+  assert(GetSize() <= GetMaxSize());
   return GetSize();
 }
 
@@ -127,12 +139,13 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::MoveHalfTo(
   // detection
   assert(recipient != nullptr);
   auto size = GetSize();
-  assert(size == GetMaxSize() + 1);
+  assert(size == GetMaxSize());
   
   // copy
   int hf_index = size / 2;
   auto src = array + hf_index;
-  recipient->CopyHalfFrom(src, size - hf_index + 1);
+  size = size % 2 == 0 ? hf_index : hf_index + 1;
+  recipient->CopyHalfFrom(src, size);
 
   // update size
   SetSize(hf_index);
@@ -163,14 +176,11 @@ INDEX_TEMPLATE_ARGUMENTS
 bool B_PLUS_TREE_LEAF_PAGE_TYPE::Lookup(const KeyType &key, ValueType &value,
                                         const KeyComparator &comparator) const {
   auto idx = KeyIndex(key,comparator);
-  if(comparator(key, array[idx]) == 0) {
+  if(comparator(key, array[idx].first) == 0) {
     value = array[idx].second;
-    break;
   } else {
-    n_idx = idx - 1;
-    if(n_idx >= 0 && comparator(key, array[n_idx]) == 0) 
-      break;
-    else 
+    auto n_idx = idx - 1;
+    if(!(n_idx >= 0 && comparator(key, array[n_idx].first) == 0))  
       return false;
   }
   return true;
@@ -248,7 +258,8 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::MoveFirstToEndOf(
   auto parent_page_id = GetParentPageId();
   auto page = buffer_pool_manager->FetchPage(parent_page_id);
   assert(page == nullptr);
-  BPlusTreeInternalPage* parent_page = reinterpret_cast<BPlusTreeInternalPage*>(page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                                    KeyComparator>*>(page->GetData());
   auto index_in_parent = parent_page->ValueIndex(GetPageId());
   parent_page->SetKeyAt(index_in_parent, array[1].first);
   buffer_pool_manager->UnpinPage(parent_page_id, true);
@@ -308,7 +319,8 @@ void B_PLUS_TREE_LEAF_PAGE_TYPE::CopyFirstFrom(
   // change parent page info
   auto parent_page_id = GetParentPageId();
   auto page = buffer_pool_manager->FetchPage(parent_page_id);
-  BPlusTreeInternalPage* parent_page = reinterpret_cast<BPlusTreeInternalPage*>(page->GetData());
+  auto parent_page = reinterpret_cast<BPlusTreeInternalPage<KeyType, page_id_t,
+                                        KeyComparator> *>(page->GetData());
   parent_page->SetKeyAt(parentIndex, item.first);
   buffer_pool_manager->UnpinPage(parent_page_id, true);
 

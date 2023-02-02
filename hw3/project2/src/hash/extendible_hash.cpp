@@ -65,18 +65,17 @@ int ExtendibleHash<K, V>::GetNumBuckets() const {
  */
 template <typename K, typename V>
 bool ExtendibleHash<K, V>::Find(const K &key, V &value) {
+  // check the validity of the index 
+  std::lock_guard<std::mutex> guard(latch);
   // get hash value of the key
   auto key_hash = HashKey(key);
   // get index from hash value
   size_t index = key_hash & ((1 << global_dpt) - 1);
-  // check the validity of the index 
-  std::lock_guard<std::mutex> lck(dir[index]->latch);
-  if(dir[index]){
-    auto iter = dir[index]->buffer.find(key);
-    if(iter == dir[index]->buffer.end()) 
-      return false;
-    else 
-      value = iter->second;
+
+  std::shared_ptr<bucket> bkt = dir[index];
+
+  if(bkt != nullptr && bkt->buffer.find(key) != bkt->buffer.end()){
+    value = bkt->buffer[key];
     return true;
   }
   return false;

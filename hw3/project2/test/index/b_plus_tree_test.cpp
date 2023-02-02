@@ -40,7 +40,9 @@ TEST(BPlusTreeTests, InsertTest1) {
     int64_t value = key & 0xFFFFFFFF;
     rid.Set((int32_t)(key >> 32), value);
     index_key.SetFromInteger(key);
+    // std::cout << "insert key: " << key << std::endl;
     tree.Insert(index_key, rid, transaction);
+    // std::cout << "finish inserting key: " << key << std::endl;
   }
 
   std::vector<RID> rids;
@@ -48,6 +50,7 @@ TEST(BPlusTreeTests, InsertTest1) {
     rids.clear();
     index_key.SetFromInteger(key);
     tree.GetValue(index_key, rids);
+    // std::cout << "get value success" << std::endl;
     EXPECT_EQ(rids.size(), 1);
 
     int64_t value = key & 0xFFFFFFFF;

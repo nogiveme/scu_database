@@ -50,24 +50,24 @@ Page *BufferPoolManager::FetchPage(page_id_t page_id) {
   std::lock_guard<std::mutex> lck(latch_);
   Page* ptr = nullptr;
   if(page_table_->Find(page_id, ptr)) {
-    std::cout << "FetchPage: find and increase the pin count" << std::endl;
+    // std::cout << "FetchPage: find and increase the pin count" << std::endl;
     ptr->pin_count_++;
     return ptr;
   }
   else {
     if(free_list_->size() > 0){
-      std::cout << "FetchPage: from free list get a page" << std::endl;
+      // std::cout << "FetchPage: from free list get a page" << std::endl;
       ptr = free_list_->front();
       free_list_->pop_front();
     } else {
       if(replacer_->Size() == 0) {
-        std::cout << "FetchPage: no replace page" << std::endl;
+        // std::cout << "FetchPage: no replace page" << std::endl;
         return nullptr;
       }
-      std::cout << "FetchPage: find replace page" << std::endl;
+      // std::cout << "FetchPage: find replace page" << std::endl;
       replacer_->Victim(ptr);
       if(ptr->is_dirty_) {
-        std::cout << "FetchPage: replace page is dirty" << std::endl;
+        // std::cout << "FetchPage: replace page is dirty" << std::endl;
         disk_manager_->WritePage(ptr->GetPageId(), ptr->data_);
       }
     }
@@ -77,7 +77,7 @@ Page *BufferPoolManager::FetchPage(page_id_t page_id) {
     ptr->is_dirty_ = false;
     ptr->page_id_ = page_id;
     ptr->pin_count_ = 1;
-    std::cout << "FetchPage: finish" << std::endl;
+    // std::cout << "FetchPage: finish" << std::endl;
     return ptr;
   }
 }
